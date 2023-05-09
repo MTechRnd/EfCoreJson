@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EFCoreJsonApp.Data
 {
-    public class JsonDataContext: DataContext
+    public class JsonDataContext: DbContext
     {
         public DbSet<OrderWithOrderDetails> OrderWithOrderDetails { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -19,6 +19,18 @@ namespace EFCoreJsonApp.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<OrderWithOrderDetails>()
+                .HasKey(o => o.Id);
+
+            modelBuilder.Entity<OrderWithOrderDetails>()
+                .Property(o => o.CustomerName)
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<OrderWithOrderDetails>()
+                .Property(o => o.OrderDate)
+                .HasColumnType("date");
+
+
             modelBuilder.Entity<OrderWithOrderDetails>()
                 .OwnsMany(x => x.OrderDetailsJson, builder => { builder.ToJson(); });
         }

@@ -36,7 +36,7 @@ namespace EFCoreJsonApp.Migrations.Data
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("date");
 
                     b.HasKey("OrderID");
 
@@ -60,14 +60,14 @@ namespace EFCoreJsonApp.Migrations.Data
                         .HasColumnType("int");
 
                     b.Property<float>("Price")
-                        .HasColumnType("real");
+                        .HasColumnType("float(24)");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<float>("Total")
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("real")
+                        .HasColumnType("float(24)")
                         .HasComputedColumnSql("[Quantity] * [Price]");
 
                     b.HasKey("Id");

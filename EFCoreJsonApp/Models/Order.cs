@@ -10,13 +10,10 @@ namespace EFCoreJsonApp.Models
 {
     public class Order
     {
-        [Key]
         public int OrderID { get; set; }
-        [MaxLength(100)]
         public string CustomerName { get; set; }
         public DateTime OrderDate { get; set; }
         public List<OrderDetails> OrderDetails { get; set; } = new List<OrderDetails>();
     }
 
-    
 }
