@@ -3,7 +3,7 @@ using EFCoreJsonApp.Models.Order;
 
 namespace EFCoreJsonApp.Models.OrderDetails
 {
-    public class OrderDetailEntity : BasicEntity
+    public class OrderDetailEntity : BaseEntity
     {
         public Guid OrderId { get; set; }
         public string ItemName { get; set; }

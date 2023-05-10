@@ -3,7 +3,7 @@ using EFCoreJsonApp.Models.OrderDetails;
 
 namespace EFCoreJsonApp.Models.Order
 {
-    public class OrderEntity : BasicEntity
+    public class OrderEntity : BaseEntity
     {
         public string CustomerName { get; set; }
         public DateTime OrderDate { get; set; }

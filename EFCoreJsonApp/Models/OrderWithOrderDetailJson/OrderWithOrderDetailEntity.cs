@@ -2,7 +2,7 @@
 
 namespace EFCoreJsonApp.Models.OrderWithOrderDetail
 {
-    public class OrderWithOrderDetailEntity: BasicEntity
+    public class OrderWithOrderDetailEntity: BaseEntity
     {
         public string CustomerName { get; set; }
         public DateTime OrderDate { get; set; }

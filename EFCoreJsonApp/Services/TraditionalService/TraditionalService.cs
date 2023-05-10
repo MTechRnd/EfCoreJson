@@ -2,11 +2,6 @@
 using EFCoreJsonApp.Models.Order;
 using EFCoreJsonApp.Models.OrderDetails;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EFCoreJsonApp.Services.TraditionalService
 {
@@ -24,13 +19,13 @@ namespace EFCoreJsonApp.Services.TraditionalService
             throw new NotImplementedException();
         }
 
-        public async Task<List<OrderEntity>> GetAllData()
+        public async Task<IList<OrderEntity>> GetAllData()
         {
             var data = await _context.Orders.ToListAsync();
             return data;
         }
 
-        public Task<List<OrderEntity>> GetDataForMultipleCustomer(int[] id)
+        public Task<IList<OrderEntity>> GetDataForMultipleCustomer(int[] id)
         {
             throw new NotImplementedException();
         }
@@ -40,7 +35,7 @@ namespace EFCoreJsonApp.Services.TraditionalService
             throw new NotImplementedException();
         }
 
-        public Task<List<OrderDetailEntity>> TotalOrdersOfCustomer(int id)
+        public Task<IList<OrderDetailEntity>> TotalOrdersOfCustomer(int id)
         {
             throw new NotImplementedException();
         }

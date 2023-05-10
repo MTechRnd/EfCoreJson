@@ -1,6 +1,6 @@
 ﻿namespace EFCoreJsonApp.Comman
 {
-    public class BasicEntity
+    public class BaseEntity
     {
         public Guid? Id { get; set; }
     }

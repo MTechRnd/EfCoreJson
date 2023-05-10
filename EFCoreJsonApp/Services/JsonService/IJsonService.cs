@@ -9,10 +9,10 @@ namespace EFCoreJsonApp.Services.JsonService
 {
     public interface IJsonService
     {
-        Task<List<OrderWithOrderDetailEntity>> GetAllData();
+        Task<IList<OrderWithOrderDetailEntity>> GetAllData();
         Task<OrderWithOrderDetailEntity> GetDataForSingleCustomer(int id);
-        Task<List<OrderWithOrderDetailEntity>> GetDataForMultipleCustomer(int[] id);
+        Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomer(int[] id);
         Task<OrderWithOrderDetailEntity> AggregateOperation();
-        Task<List<OrderWithOrderDetailEntity>> TotalOrdersOfCustomer(int id);
+        Task<IList<OrderWithOrderDetailEntity>> TotalOrdersOfCustomer(int id);
     }
 }
