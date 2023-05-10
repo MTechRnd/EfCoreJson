@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace EFCoreJsonApp.Migrations
+namespace EFCoreJsonApp.Migrations.JsonData
 {
     /// <inheritdoc />
-    public partial class fluentapijsondatacontext : Migration
+    public partial class EntityConfigurationMigrationJson : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,8 +15,7 @@ namespace EFCoreJsonApp.Migrations
                 name: "OrderWithOrderDetails",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWSEQUENTIALID()"),
                     CustomerName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     OrderDate = table.Column<DateTime>(type: "date", nullable: false),
                     OrderDetailsJson = table.Column<string>(type: "nvarchar(max)", nullable: true)

@@ -4,16 +4,19 @@ using EFCoreJsonApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace EFCoreJsonApp.Migrations.Data
+namespace EFCoreJsonApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20230510092712_Entity Configuration Migration")]
+    partial class EntityConfigurationMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,13 +25,12 @@ namespace EFCoreJsonApp.Migrations.Data
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("EFCoreJsonApp.Models.Order", b =>
+            modelBuilder.Entity("EFCoreJsonApp.Models.Order.OrderEntity", b =>
                 {
-                    b.Property<int>("OrderID")
+                    b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderID"));
+                        .HasColumnType("uniqueidentifier")
+                        .HasDefaultValueSql("NEWSEQUENTIALID()");
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
@@ -38,26 +40,25 @@ namespace EFCoreJsonApp.Migrations.Data
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("date");
 
-                    b.HasKey("OrderID");
+                    b.HasKey("Id");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
-            modelBuilder.Entity("EFCoreJsonApp.Models.OrderDetails", b =>
+            modelBuilder.Entity("EFCoreJsonApp.Models.OrderDetails.OrderDetailEntity", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier")
+                        .HasDefaultValueSql("NEWSEQUENTIALID()");
 
                     b.Property<string>("ItemName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<float>("Price")
                         .HasColumnType("float(24)");
@@ -74,12 +75,12 @@ namespace EFCoreJsonApp.Migrations.Data
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderDetails");
+                    b.ToTable("OrderDetails", (string)null);
                 });
 
-            modelBuilder.Entity("EFCoreJsonApp.Models.OrderDetails", b =>
+            modelBuilder.Entity("EFCoreJsonApp.Models.OrderDetails.OrderDetailEntity", b =>
                 {
-                    b.HasOne("EFCoreJsonApp.Models.Order", "Order")
+                    b.HasOne("EFCoreJsonApp.Models.Order.OrderEntity", "Order")
                         .WithMany("OrderDetails")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -88,7 +89,7 @@ namespace EFCoreJsonApp.Migrations.Data
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("EFCoreJsonApp.Models.Order", b =>
+            modelBuilder.Entity("EFCoreJsonApp.Models.Order.OrderEntity", b =>
                 {
                     b.Navigation("OrderDetails");
                 });

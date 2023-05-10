@@ -1,38 +1,24 @@
-﻿using EFCoreJsonApp.Models;
+﻿using EFCoreJsonApp.Models.OrderWithOrderDetail;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 
 namespace EFCoreJsonApp.Data
 {
     public class JsonDataContext: DbContext
     {
-        public DbSet<OrderWithOrderDetails> OrderWithOrderDetails { get; set; }
+        public DbSet<OrderWithOrderDetailEntity> OrderWithOrderDetails { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source= (localdb)\\MSSQLLocalDB; Initial Catalog=OrdersDB; Integrated Security=True;")
+            IConfiguration config = new ConfigurationBuilder()
+                 .AddUserSecrets<JsonDataContext>()
+                 .Build();
+            optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"))
                 .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<OrderWithOrderDetails>()
-                .HasKey(o => o.Id);
-
-            modelBuilder.Entity<OrderWithOrderDetails>()
-                .Property(o => o.CustomerName)
-                .HasMaxLength(100);
-
-            modelBuilder.Entity<OrderWithOrderDetails>()
-                .Property(o => o.OrderDate)
-                .HasColumnType("date");
-
-
-            modelBuilder.Entity<OrderWithOrderDetails>()
-                .OwnsMany(x => x.OrderDetailsJson, builder => { builder.ToJson(); });
+            modelBuilder.ApplyConfiguration(new OrderWithOrderDetailEntityConfiguration());
         }
     }
 }

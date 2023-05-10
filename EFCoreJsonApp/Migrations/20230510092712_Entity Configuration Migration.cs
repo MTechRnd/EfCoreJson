@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace EFCoreJsonApp.Migrations.Data
+namespace EFCoreJsonApp.Migrations
 {
     /// <inheritdoc />
-    public partial class fluentapidatacontext : Migration
+    public partial class EntityConfigurationMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,23 +15,21 @@ namespace EFCoreJsonApp.Migrations.Data
                 name: "Orders",
                 columns: table => new
                 {
-                    OrderID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWSEQUENTIALID()"),
                     CustomerName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     OrderDate = table.Column<DateTime>(type: "date", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Orders", x => x.OrderID);
+                    table.PrimaryKey("PK_Orders", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "OrderDetails",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWSEQUENTIALID()"),
+                    OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ItemName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Price = table.Column<float>(type: "float(24)", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
@@ -44,7 +42,7 @@ namespace EFCoreJsonApp.Migrations.Data
                         name: "FK_OrderDetails_Orders_OrderId",
                         column: x => x.OrderId,
                         principalTable: "Orders",
-                        principalColumn: "OrderID",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 

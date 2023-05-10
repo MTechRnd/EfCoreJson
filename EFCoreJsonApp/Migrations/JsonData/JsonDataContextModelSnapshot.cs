@@ -4,19 +4,16 @@ using EFCoreJsonApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace EFCoreJsonApp.Migrations
+namespace EFCoreJsonApp.Migrations.JsonData
 {
     [DbContext(typeof(JsonDataContext))]
-    [Migration("20230509105057_fluent-api-jsondata context")]
-    partial class fluentapijsondatacontext
+    partial class JsonDataContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,13 +22,12 @@ namespace EFCoreJsonApp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("EFCoreJsonApp.Models.OrderWithOrderDetails", b =>
+            modelBuilder.Entity("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderWithOrderDetailEntity", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier")
+                        .HasDefaultValueSql("NEWSEQUENTIALID()");
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
@@ -46,12 +42,12 @@ namespace EFCoreJsonApp.Migrations
                     b.ToTable("OrderWithOrderDetails");
                 });
 
-            modelBuilder.Entity("EFCoreJsonApp.Models.OrderWithOrderDetails", b =>
+            modelBuilder.Entity("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderWithOrderDetailEntity", b =>
                 {
-                    b.OwnsMany("EFCoreJsonApp.Models.OrderDetailsJson", "OrderDetailsJson", b1 =>
+                    b.OwnsMany("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderDetailsJson", "OrderDetailsJson", b1 =>
                         {
-                            b1.Property<int>("OrderWithOrderDetailsId")
-                                .HasColumnType("int");
+                            b1.Property<Guid>("OrderWithOrderDetailEntityId")
+                                .HasColumnType("uniqueidentifier");
 
                             b1.Property<int>("Id")
                                 .ValueGeneratedOnAdd()
@@ -70,14 +66,14 @@ namespace EFCoreJsonApp.Migrations
                             b1.Property<float>("Total")
                                 .HasColumnType("real");
 
-                            b1.HasKey("OrderWithOrderDetailsId", "Id");
+                            b1.HasKey("OrderWithOrderDetailEntityId", "Id");
 
                             b1.ToTable("OrderWithOrderDetails");
 
                             b1.ToJson("OrderDetailsJson");
 
                             b1.WithOwner()
-                                .HasForeignKey("OrderWithOrderDetailsId");
+                                .HasForeignKey("OrderWithOrderDetailEntityId");
                         });
 
                     b.Navigation("OrderDetailsJson");

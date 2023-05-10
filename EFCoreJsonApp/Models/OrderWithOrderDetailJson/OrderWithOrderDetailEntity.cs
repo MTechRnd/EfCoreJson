@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EFCoreJsonApp.Comman;
 
-namespace EFCoreJsonApp.Models
+namespace EFCoreJsonApp.Models.OrderWithOrderDetail
 {
-    public class OrderWithOrderDetails
+    public class OrderWithOrderDetailEntity: BasicEntity
     {
-        public int Id { get; set; }
         public string CustomerName { get; set; }
         public DateTime OrderDate { get; set; }
         public List<OrderDetailsJson> OrderDetailsJson { get; set; } = new();

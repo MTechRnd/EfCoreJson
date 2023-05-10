@@ -1,4 +1,5 @@
-﻿using EFCoreJsonApp.Models;
+﻿using EFCoreJsonApp.Models.Order;
+using EFCoreJsonApp.Models.OrderDetails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,11 @@ namespace EFCoreJsonApp.Services
 {
     public interface ITraditionalService
     {
-        Task<List<Order>> GetAllData();
-        Task<Order> GetDataForSingleCustomer(int id);
-        Task<List<Order>> GetDataForMultipleCustomer(int[] id);
-        Task<OrderDetails> AggregateOperation();
-        Task<List<OrderDetails>> TotalOrdersOfCustomer(int id);
+        Task<List<OrderEntity>> GetAllData();
+        Task<OrderEntity> GetDataForSingleCustomer(int id);
+        Task<List<OrderEntity>> GetDataForMultipleCustomer(int[] id);
+        Task<OrderDetailEntity> AggregateOperation();
+        Task<List<OrderDetailEntity>> TotalOrdersOfCustomer(int id);
 
     }
 }
