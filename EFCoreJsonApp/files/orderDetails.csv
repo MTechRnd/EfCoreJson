@@ -1,0 +1,999 @@
+OrderId,ItemName,Price,Quantity
+3fd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Spoon - Soup& Plastic,3868,4
+40d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Milk Powder,1560,1
+41d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Milk - Buttermilk,1368,9
+42d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Loin& Center Cut,464,9
+43d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Knorr& Ministrone,1842,5
+44d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Wasabi Paste,2028,3
+45d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Vinegar - Balsamic,891,7
+46d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Lamb - Shoulder& Boneless,1977,10
+47d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Peas - Pigeon& Dry,2388,3
+48d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Island Oasis - Peach Daiquiri,1033,5
+49d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Fudge - Cream Fudge,905,4
+4ad4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Baby& Liver,3007,9
+4bd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Mountain Dew,1817,1
+4cd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Tortillas - Flour& 12,2221,3
+4dd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Napkin White - Starched,792,10
+4ed4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Piper Heidsieck Brut,554,8
+4fd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Vinegar - White,2689,5
+50d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Beets,1778,7
+51d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Mix - Cappucino Cocktail,2003,3
+52d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Perron Cheddar,2462,4
+53d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Roll& Calabrese,3662,7
+54d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Egg - Salad Premix,2025,2
+55d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Red Pepper Paste,1876,3
+56d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Jicama,3184,7
+57d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Scallops - U - 10,922,1
+58d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Coffee - Beans& Whole,2861,10
+59d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Corn - On The Cob,1381,9
+5ad4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Whmis Spray Bottle Graduated,3523,4
+5bd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Iced Tea - Lemon& 460 Ml,672,9
+5cd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Pear - Prickly,3567,5
+5dd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Apricots - Halves,2974,4
+5ed4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Pomello,2375,3
+5fd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Black Currants,1165,8
+60d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,True - Vue Containers,3168,4
+61d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Leg,714,10
+62d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Chives - Fresh,2238,3
+63d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Grapefruit - White,1321,5
+64d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Buffalo - Tenderloin,3689,1
+65d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Steampan - Lid For Half Size,898,2
+66d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - White& Mix,1691,6
+67d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Lobster - Canned Premium,1543,8
+68d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Pate Pans Yellow,2434,1
+69d4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Rice - Long Grain,3982,3
+6ad4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Crab - Claws& 26 - 30,509,7
+6bd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Bread Cranberry Foccacia,2250,9
+6cd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Tray - 12in Rnd Blk,304,8
+6dd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Muffin - Mix - Bran And Maple 15l,2371,6
+6ed4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Longos - Grilled Salmon With Bbq,2712,4
+6fd4cc2b-39ef-ed11-9f03-f46b8c8f0ef6,Scallop - St. Jaques,392,2
+9043ed31-39ef-ed11-9f03-f46b8c8f0ef6,Cod - Black Whole Fillet,1279,4
+9143ed31-39ef-ed11-9f03-f46b8c8f0ef6,Sage Ground Wiberg,2663,7
+9243ed31-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Pullman& Sliced,1949,6
+9343ed31-39ef-ed11-9f03-f46b8c8f0ef6,Sardines,2733,1
+9443ed31-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - Chantrelle& Fresh,333,6
+9543ed31-39ef-ed11-9f03-f46b8c8f0ef6,Garbage Bags - Clear,3116,10
+9643ed31-39ef-ed11-9f03-f46b8c8f0ef6,V8 Splash Strawberry Banana,3369,5
+9743ed31-39ef-ed11-9f03-f46b8c8f0ef6,Shrimp - 21/25& Peel And Deviened,2509,10
+9843ed31-39ef-ed11-9f03-f46b8c8f0ef6,Chocolate - Compound Coating,3834,10
+9943ed31-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Winzer Krems Gruner,624,1
+9a43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Rabbit - Saddles,3453,2
+9b43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Filling - Mince Meat,3002,4
+9c43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Short Ribs,909,2
+9d43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Rum - Mount Gay Eclipes,464,1
+9e43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Carrots - Jumbo,935,10
+9f43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Cumin - Ground,524,8
+a043ed31-39ef-ed11-9f03-f46b8c8f0ef6,Ham - Proscuitto,1107,6
+a143ed31-39ef-ed11-9f03-f46b8c8f0ef6,Jameson Irish Whiskey,1080,7
+a243ed31-39ef-ed11-9f03-f46b8c8f0ef6,Beef Wellington,3326,4
+a343ed31-39ef-ed11-9f03-f46b8c8f0ef6,Cookie Dough - Oatmeal Rasin,2798,7
+a443ed31-39ef-ed11-9f03-f46b8c8f0ef6,Plastic Wrap,127,1
+a543ed31-39ef-ed11-9f03-f46b8c8f0ef6,Yogurt - Assorted Pack,1479,3
+a643ed31-39ef-ed11-9f03-f46b8c8f0ef6,Vanilla Beans,1945,1
+a743ed31-39ef-ed11-9f03-f46b8c8f0ef6,Parsnip,2455,7
+a843ed31-39ef-ed11-9f03-f46b8c8f0ef6,Soy Protein,1559,2
+a943ed31-39ef-ed11-9f03-f46b8c8f0ef6,Table Cloth 144x90 White,1937,4
+aa43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Knorr& Chicken Noodle,2409,8
+ab43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Chablis 2003 Champs,1140,5
+ac43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Sauvignon Blanc,2611,3
+ad43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Squid - Tubes / Tenticles 10/20,2544,7
+ae43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - King Eryingii,3884,9
+af43ed31-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Sleemans Cream Ale,519,1
+b043ed31-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Gato Negro Cabernet,2851,2
+b143ed31-39ef-ed11-9f03-f46b8c8f0ef6,Appetizer - Seafood Assortment,231,6
+b243ed31-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Ej Gallo Sonoma,2169,2
+b343ed31-39ef-ed11-9f03-f46b8c8f0ef6,Lid - 0090 Clear,486,9
+b443ed31-39ef-ed11-9f03-f46b8c8f0ef6,Tarragon - Primerba& Paste,2119,8
+b543ed31-39ef-ed11-9f03-f46b8c8f0ef6,Emulsifier,2813,10
+b643ed31-39ef-ed11-9f03-f46b8c8f0ef6,Chutney Sauce - Mango,2403,8
+b743ed31-39ef-ed11-9f03-f46b8c8f0ef6,Napkin - Cocktail&beige 2 - Ply,785,10
+b843ed31-39ef-ed11-9f03-f46b8c8f0ef6,Lemonade - Kiwi& 591 Ml,1587,7
+b943ed31-39ef-ed11-9f03-f46b8c8f0ef6,Coconut Milk - Unsweetened,598,10
+14851338-39ef-ed11-9f03-f46b8c8f0ef6,Nantucket Cranberry Juice,2395,3
+15851338-39ef-ed11-9f03-f46b8c8f0ef6,Cake - Miini Cheesecake Cherry,1943,10
+16851338-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Orange,931,10
+17851338-39ef-ed11-9f03-f46b8c8f0ef6,Quail - Eggs& Fresh,1805,2
+18851338-39ef-ed11-9f03-f46b8c8f0ef6,Kohlrabi,1905,8
+19851338-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - White Meat& No Tender,3385,7
+1a851338-39ef-ed11-9f03-f46b8c8f0ef6,Chinese Foods - Chicken,1667,1
+1b851338-39ef-ed11-9f03-f46b8c8f0ef6,Yukon Jack,1938,10
+1c851338-39ef-ed11-9f03-f46b8c8f0ef6,Tart Shells - Savory& 4,697,6
+1d851338-39ef-ed11-9f03-f46b8c8f0ef6,Coffee - Cafe Moreno,3606,5
+1e851338-39ef-ed11-9f03-f46b8c8f0ef6,Tomatoes - Hot House,1201,5
+1f851338-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Osso Bucco,3385,7
+20851338-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Gnocchi& Potato,1767,8
+21851338-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Jalapeno,864,1
+22851338-39ef-ed11-9f03-f46b8c8f0ef6,Tomato Puree,3210,7
+23851338-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - King Eryingii,2551,2
+24851338-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Mozzarella,277,2
+25851338-39ef-ed11-9f03-f46b8c8f0ef6,Gin - Gilbeys London& Dry,1150,1
+26851338-39ef-ed11-9f03-f46b8c8f0ef6,Flour - Bread,3536,2
+27851338-39ef-ed11-9f03-f46b8c8f0ef6,Yoghurt Tubes,1649,3
+28851338-39ef-ed11-9f03-f46b8c8f0ef6,Pickerel - Fillets,426,10
+29851338-39ef-ed11-9f03-f46b8c8f0ef6,Gooseberry,3086,6
+2a851338-39ef-ed11-9f03-f46b8c8f0ef6,Crab - Claws& 26 - 30,2577,8
+2b851338-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Grana Padano,2808,7
+2c851338-39ef-ed11-9f03-f46b8c8f0ef6,Crab - Meat,990,3
+2d851338-39ef-ed11-9f03-f46b8c8f0ef6,Bread Crumbs - Japanese Style,1331,6
+2e851338-39ef-ed11-9f03-f46b8c8f0ef6,Dill - Primerba& Paste,2712,8
+2f851338-39ef-ed11-9f03-f46b8c8f0ef6,Shrimp - Tiger 21/25,110,4
+30851338-39ef-ed11-9f03-f46b8c8f0ef6,Soup Campbells Beef With Veg,3242,5
+31851338-39ef-ed11-9f03-f46b8c8f0ef6,Ecolab Crystal Fusion,1546,3
+32851338-39ef-ed11-9f03-f46b8c8f0ef6,Chocolate - Mi - Amere Semi,2196,9
+33851338-39ef-ed11-9f03-f46b8c8f0ef6,Spice - Paprika,1735,3
+34851338-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Bresaola,1909,5
+35851338-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Kindney& Whole,2268,1
+36851338-39ef-ed11-9f03-f46b8c8f0ef6,Table Cloth - 53x69 Colour,3494,9
+37851338-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Campbells Chicken,853,5
+38851338-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Verve - Chipotle Chicken,2434,9
+39851338-39ef-ed11-9f03-f46b8c8f0ef6,Bread - White& Unsliced,548,4
+3a851338-39ef-ed11-9f03-f46b8c8f0ef6,Sour Puss - Tangerine,3980,5
+3b851338-39ef-ed11-9f03-f46b8c8f0ef6,French Pastries,3865,1
+3c851338-39ef-ed11-9f03-f46b8c8f0ef6,Lamb - Shanks,1061,2
+3d851338-39ef-ed11-9f03-f46b8c8f0ef6,Oil - Olive,148,2
+3e851338-39ef-ed11-9f03-f46b8c8f0ef6,Longos - Penne With Pesto,674,5
+3f851338-39ef-ed11-9f03-f46b8c8f0ef6,Coffee Decaf Colombian,742,5
+40851338-39ef-ed11-9f03-f46b8c8f0ef6,Nantucket - Carrot Orange,1836,8
+41851338-39ef-ed11-9f03-f46b8c8f0ef6,Cabbage - Nappa,2568,3
+42851338-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Magnotta - Red& Baco,222,10
+43851338-39ef-ed11-9f03-f46b8c8f0ef6,Banana Turning,864,2
+44851338-39ef-ed11-9f03-f46b8c8f0ef6,Pimento - Canned,2537,7
+45851338-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Assorted Rolls,3022,6
+b14a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - White& Ground,1255,10
+b24a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Wine - White& Ej,1947,6
+b34a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Cake - Sheet Strawberry,202,4
+b44a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Pineapple& 48 Oz,3924,9
+b54a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Magnotta Bel Paese Red,3238,9
+b64a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Onions - Dried& Chopped,2438,9
+b74a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Leg,3166,9
+b84a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Poppy Seed,3243,6
+b94a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Lentils - Red& Dry,3500,4
+ba4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Dawn Professionl Pot And Pan,2932,3
+bb4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Bread - White& Unsliced,1822,3
+bc4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Truffle - Whole Black Peeled,710,1
+bd4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Stock - Veal& White,2093,1
+be4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Campbells Chili Veg,732,10
+bf4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Syrup - Kahlua Chocolate,1306,7
+c04a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - White Meat& No Tender,2126,7
+c14a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Sausage& Medium,955,6
+c24a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Nori Sea Weed - Gold Label,3860,7
+c34a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Sping Loaded Cup Dispenser,630,3
+c44a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Rum - Coconut& Malibu,1755,8
+c54a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Salmon Steak - Cohoe 6 Oz,1617,3
+c64a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Bread - White Mini Epi,2384,2
+c74a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Cream - 18%,3032,2
+c84a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Lemonade - Mandarin& 591 Ml,3334,8
+c94a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Icecream - Dstk Super Cone,199,4
+ca4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Scallops - U - 10,2899,3
+cb4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Salami - Genova,3729,7
+cc4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Bandage - Fexible 1x3,1251,5
+cd4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Guava,2542,7
+ce4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Arctic Char - Fillets,328,4
+cf4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Coconut - Shredded& Unsweet,3544,9
+d04a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Salmon - Canned,3839,5
+d14a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Lamb Rack Frenched Australian,1829,8
+d24a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Chocolate - Pistoles& White,2064,2
+d34a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Manchego& Spanish,2632,1
+d44a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Dry Ice,1227,9
+d54a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Ox Tongue,500,6
+d64a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Maipo Valle Cabernet,3278,8
+d74a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Lamancha Do Crianza,3783,4
+d84a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Flower - Dish Garden,3015,5
+d94a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Charddonnay Errazuriz,1489,2
+da4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Apricots - Dried,3672,5
+db4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Cake - Sheet Strawberry,219,9
+dc4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Beans - Black Bean& Canned,3938,3
+dd4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Sour Puss Sour Apple,382,3
+de4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Carmenere Casillero Del,1572,3
+df4a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - Shitake& Dry,3181,1
+e04a1b3e-39ef-ed11-9f03-f46b8c8f0ef6,Uniform Linen Charge,2678,7
+e9041344-39ef-ed11-9f03-f46b8c8f0ef6,Pears - Anjou,1489,9
+ea041344-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Upper Canada Light,2634,2
+eb041344-39ef-ed11-9f03-f46b8c8f0ef6,Plate - Foam& Bread And Butter,2898,6
+ec041344-39ef-ed11-9f03-f46b8c8f0ef6,Bacardi Mojito,3918,7
+ed041344-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Liver,3038,7
+ee041344-39ef-ed11-9f03-f46b8c8f0ef6,Worcestershire Sauce,1079,1
+ef041344-39ef-ed11-9f03-f46b8c8f0ef6,Tuna - Fresh,1028,4
+f0041344-39ef-ed11-9f03-f46b8c8f0ef6,Tea - Herbal I Love Lemon,2508,7
+f1041344-39ef-ed11-9f03-f46b8c8f0ef6,Basil - Seedlings Cookstown,1647,10
+f2041344-39ef-ed11-9f03-f46b8c8f0ef6,Swiss Chard,3149,3
+f3041344-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Tribal Sauvignon,3983,7
+f4041344-39ef-ed11-9f03-f46b8c8f0ef6,Tea - Jasmin Green,2137,7
+f5041344-39ef-ed11-9f03-f46b8c8f0ef6,Dc Hikiage Hira Huba,3875,2
+f6041344-39ef-ed11-9f03-f46b8c8f0ef6,Hagen Daza - Dk Choocolate,1342,6
+f7041344-39ef-ed11-9f03-f46b8c8f0ef6,Paper - Brown Paper Mini Cups,486,8
+f8041344-39ef-ed11-9f03-f46b8c8f0ef6,Extract - Vanilla&artificial,2786,7
+f9041344-39ef-ed11-9f03-f46b8c8f0ef6,Lettuce - Frisee,2291,9
+fa041344-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Campbells - Tomato,1680,2
+fb041344-39ef-ed11-9f03-f46b8c8f0ef6,Lettuce - Sea / Sea Asparagus,281,1
+fc041344-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Fett Alfredo& Single Serve,2337,10
+fd041344-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Olive Dinner Roll,2344,7
+fe041344-39ef-ed11-9f03-f46b8c8f0ef6,Bread Cranberry Foccacia,1919,10
+ff041344-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Dubouef Macon - Villages,1116,6
+00051344-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Loin& Center Cut,3005,5
+01051344-39ef-ed11-9f03-f46b8c8f0ef6,Flour - Masa De Harina Mexican,2983,8
+02051344-39ef-ed11-9f03-f46b8c8f0ef6,Raisin - Golden,1637,5
+03051344-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Valpolicella Masi,3476,7
+04051344-39ef-ed11-9f03-f46b8c8f0ef6,Cookies - Oreo& 4 Pack,3151,9
+05051344-39ef-ed11-9f03-f46b8c8f0ef6,Oven Mitts - 15 Inch,1006,7
+06051344-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Two Oceans Cabernet,3955,10
+07051344-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Pineapple& 48 Oz,3793,5
+08051344-39ef-ed11-9f03-f46b8c8f0ef6,Soho Lychee Liqueur,2345,3
+09051344-39ef-ed11-9f03-f46b8c8f0ef6,Stock - Beef& Brown,1576,7
+0a051344-39ef-ed11-9f03-f46b8c8f0ef6,Cherries - Frozen,2300,10
+0b051344-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Segura Viudas Aria Brut,1067,7
+0c051344-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Cahors Ac 2000& Clos,4000,3
+0d051344-39ef-ed11-9f03-f46b8c8f0ef6,Muffins - Assorted,932,3
+0e051344-39ef-ed11-9f03-f46b8c8f0ef6,Pineapple - Regular,101,9
+0f051344-39ef-ed11-9f03-f46b8c8f0ef6,Squid Ink,3370,3
+10051344-39ef-ed11-9f03-f46b8c8f0ef6,Sour Cream,1313,7
+11051344-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Striploin,3450,10
+12051344-39ef-ed11-9f03-f46b8c8f0ef6,Arizona - Green Tea,1776,6
+13051344-39ef-ed11-9f03-f46b8c8f0ef6,Rum - Mount Gay Eclipes,929,9
+14051344-39ef-ed11-9f03-f46b8c8f0ef6,Country Roll,3494,2
+15051344-39ef-ed11-9f03-f46b8c8f0ef6,Squash - Pattypan& Yellow,1995,6
+16051344-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Ox Tongue,671,1
+17051344-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Pablano,3004,5
+18051344-39ef-ed11-9f03-f46b8c8f0ef6,Noodles - Cellophane& Thin,2397,2
+19051344-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - Base& Ultimate,3207,4
+1a051344-39ef-ed11-9f03-f46b8c8f0ef6,Pastry - Carrot Muffin - Mini,189,7
+7a50114a-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Bakers Cream Cheese,231,2
+7b50114a-39ef-ed11-9f03-f46b8c8f0ef6,Shallots,2316,7
+7c50114a-39ef-ed11-9f03-f46b8c8f0ef6,Table Cloth 81x81 Colour,1942,5
+7d50114a-39ef-ed11-9f03-f46b8c8f0ef6,Ham - Smoked& Bone - In,3896,6
+7e50114a-39ef-ed11-9f03-f46b8c8f0ef6,Yucca,3800,4
+7f50114a-39ef-ed11-9f03-f46b8c8f0ef6,Campari,1031,7
+8050114a-39ef-ed11-9f03-f46b8c8f0ef6,Tilapia - Fillets,2511,4
+8150114a-39ef-ed11-9f03-f46b8c8f0ef6,Nut - Cashews& Whole& Raw,1586,3
+8250114a-39ef-ed11-9f03-f46b8c8f0ef6,Bacon Strip Precooked,152,3
+8350114a-39ef-ed11-9f03-f46b8c8f0ef6,Mcgillicuddy Vanilla Schnap,2458,3
+8450114a-39ef-ed11-9f03-f46b8c8f0ef6,Dr. Pepper - 355ml,1688,5
+8550114a-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Red& Cabernet Sauvignon,592,5
+8650114a-39ef-ed11-9f03-f46b8c8f0ef6,Compound - Rum,1088,6
+8750114a-39ef-ed11-9f03-f46b8c8f0ef6,True - Vue Containers,390,3
+8850114a-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Frozen Basket Variety,3146,2
+8950114a-39ef-ed11-9f03-f46b8c8f0ef6,Soap - Pine Sol Floor Cleaner,3071,3
+8a50114a-39ef-ed11-9f03-f46b8c8f0ef6,Cream - 18%,2703,4
+8b50114a-39ef-ed11-9f03-f46b8c8f0ef6,Buttons,3190,8
+8c50114a-39ef-ed11-9f03-f46b8c8f0ef6,Syrup - Monin - Passion Fruit,3354,1
+8d50114a-39ef-ed11-9f03-f46b8c8f0ef6,Tart Shells - Sweet& 2,3397,9
+8e50114a-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Rib Roast& Cap On,772,6
+8f50114a-39ef-ed11-9f03-f46b8c8f0ef6,Drambuie,3605,4
+9050114a-39ef-ed11-9f03-f46b8c8f0ef6,Potatoes - Fingerling 4 Oz,1215,5
+9150114a-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - Base,2723,4
+9250114a-39ef-ed11-9f03-f46b8c8f0ef6,Tarragon - Fresh,3679,5
+9350114a-39ef-ed11-9f03-f46b8c8f0ef6,Bread Ww Cluster,2547,4
+9450114a-39ef-ed11-9f03-f46b8c8f0ef6,Soup - French Can Pea,3960,10
+9550114a-39ef-ed11-9f03-f46b8c8f0ef6,Melon - Honey Dew,1405,2
+9650114a-39ef-ed11-9f03-f46b8c8f0ef6,Flour - All Purpose,1262,6
+9750114a-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Agnolotti - Butternut,1276,10
+9850114a-39ef-ed11-9f03-f46b8c8f0ef6,Pomello,1261,9
+9950114a-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Penfolds Koonuga Hill,379,6
+9a50114a-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Dark Rye,2411,9
+9b50114a-39ef-ed11-9f03-f46b8c8f0ef6,Tamarind Paste,1878,1
+9c50114a-39ef-ed11-9f03-f46b8c8f0ef6,Appetizer - Crab And Brie,1421,8
+9d50114a-39ef-ed11-9f03-f46b8c8f0ef6,Soap - Mr.clean Floor Soap,3944,7
+9e50114a-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Cooked& Corned,3369,7
+9f50114a-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Sweetbread,2407,10
+a050114a-39ef-ed11-9f03-f46b8c8f0ef6,Scallop - St. Jaques,3100,1
+a150114a-39ef-ed11-9f03-f46b8c8f0ef6,Broom - Angled,3889,3
+a250114a-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - Enoki& Dry,1813,7
+a350114a-39ef-ed11-9f03-f46b8c8f0ef6,Table Cloth 120 Round White,1264,1
+a450114a-39ef-ed11-9f03-f46b8c8f0ef6,Syrup - Kahlua Chocolate,1232,7
+a550114a-39ef-ed11-9f03-f46b8c8f0ef6,Oil - Coconut,3728,4
+a650114a-39ef-ed11-9f03-f46b8c8f0ef6,Crackers - Water,2524,5
+a750114a-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - Leg& Boneless,3016,1
+a850114a-39ef-ed11-9f03-f46b8c8f0ef6,Capicola - Hot,3094,4
+a950114a-39ef-ed11-9f03-f46b8c8f0ef6,Tamarind Paste,1499,7
+aa50114a-39ef-ed11-9f03-f46b8c8f0ef6,Laundry - Bag Cloth,680,4
+ab50114a-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Wine,2847,9
+ac50114a-39ef-ed11-9f03-f46b8c8f0ef6,Anchovy Paste - 56 G Tube,1161,6
+ad50114a-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Le Cheve Noir,3785,2
+2bfb3950-39ef-ed11-9f03-f46b8c8f0ef6,Lamb - Shoulder,2463,10
+2cfb3950-39ef-ed11-9f03-f46b8c8f0ef6,Tea - Grapefruit Green Tea,2631,9
+2dfb3950-39ef-ed11-9f03-f46b8c8f0ef6,Puff Pastry - Sheets,3520,7
+2efb3950-39ef-ed11-9f03-f46b8c8f0ef6,Calvados - Boulard,3818,9
+2ffb3950-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Cream Cheese,3974,9
+30fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Bread Base - Gold Formel,3605,2
+31fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Round& Eye Of,3313,9
+32fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Lady Fingers,2788,5
+33fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Upper Canada Lager,322,10
+34fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Barbera Alba Doc 2001,1640,8
+35fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Table Cloth - 53x69 Colour,1513,5
+36fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Pinot Noir Pond Haddock,1059,5
+37fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Plastic Arrow Stir Stick,639,1
+38fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Cumin - Ground,571,1
+39fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Blue Nun Qualitatswein,1626,8
+3afb3950-39ef-ed11-9f03-f46b8c8f0ef6,Sage Derby,2011,8
+3bfb3950-39ef-ed11-9f03-f46b8c8f0ef6,Tendrils - Baby Pea& Organic,3147,5
+3cfb3950-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Leg,1195,3
+3dfb3950-39ef-ed11-9f03-f46b8c8f0ef6,Mahi Mahi,2493,7
+3efb3950-39ef-ed11-9f03-f46b8c8f0ef6,Hog / Sausage Casing - Pork,3970,1
+3ffb3950-39ef-ed11-9f03-f46b8c8f0ef6,Table Cloth 90x90 White,3505,5
+40fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Appetizer - Mango Chevre,3185,6
+41fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Lime,1024,8
+42fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Lentils - Green& Dry,1924,5
+43fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Black& Ground,1198,8
+44fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Sake,1297,9
+45fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Lamb - Loin& Trimmed& Boneless,546,3
+46fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Cheddarsliced,647,9
+47fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Tribal Sauvignon,3778,10
+48fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Remy Pannier Rose,506,5
+49fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Flour - Bran& Red,2371,5
+4afb3950-39ef-ed11-9f03-f46b8c8f0ef6,Scallops 60/80 Iqf,1982,10
+4bfb3950-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Red Bell,1142,9
+4cfb3950-39ef-ed11-9f03-f46b8c8f0ef6,Vermacelli - Sprinkles& Assorted,521,8
+4dfb3950-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Insides Provini,2008,7
+4efb3950-39ef-ed11-9f03-f46b8c8f0ef6,Extract - Lemon,3289,4
+4ffb3950-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Knorr& Veg / Beef,3087,2
+50fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Bread - 10 Grain,1688,4
+51fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Marlbourough Sauv Blanc,381,8
+52fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Flower - Carnations,1377,7
+53fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Magnotta - Bel Paese White,2944,6
+54fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Mas Chicet Rose& Vintage,2562,5
+55fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Hp,470,6
+56fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Lemon Balm - Fresh,3669,8
+57fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Phyllo Dough,1809,9
+58fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Havarti& Salsa,1750,4
+59fb3950-39ef-ed11-9f03-f46b8c8f0ef6,Cookies - Amaretto,3388,7
+5afb3950-39ef-ed11-9f03-f46b8c8f0ef6,Sage - Fresh,1779,1
+4a9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Kaffir Lime Leaves,3944,6
+4b9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Steel Wool,3882,4
+4c9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Basil - Thai,3500,5
+4d9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Butter - Salted,604,10
+4e9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Pastrami,2535,3
+4f9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Tomatillo,3420,6
+509f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Rice - Basmati,3497,10
+519f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Cream Of Potato / Leek,774,10
+529f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Cod - Black Whole Fillet,2234,1
+539f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Cloves - Whole,3645,4
+549f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Vodka - Smirnoff,3795,7
+559f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Laundry - Bag Cloth,3551,7
+569f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Pomello,2855,4
+579f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Vacuum Bags 12x16,866,3
+589f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Chinese Foods - Chicken,1013,2
+599f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Oysters - Smoked,2224,10
+5a9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - Wings& Tip Off,3854,4
+5b9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Bread Foccacia Whole,419,3
+5c9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Muffin Carrot - Individual,1111,1
+5d9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Lamb Shoulder Boneless Nz,245,7
+5e9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Cream Of Broccoli,1443,2
+5f9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Energy Drink - Franks Original,376,3
+609f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Russian Prince,1905,1
+619f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Cranberry 284ml,3257,6
+629f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Sesame Seed Black,440,1
+639f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Roasted Red Pepper,2445,3
+649f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Shark - Loin,1463,2
+659f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Crackers - Melba Toast,1071,8
+669f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Carbonated Water - Orange,2301,6
+679f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Shiraz Wolf Blass Premium,2779,3
+689f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Rotini& Dry,2764,1
+699f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Shank& Pieces,3502,2
+6a9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Zonnebloem Pinotage,575,3
+6b9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Flat Bread,2690,6
+6c9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Vinegar - White Wine,3980,7
+6d9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Yoplait Drink,3174,5
+6e9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Towel Multifold,3884,9
+6f9f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Foam Espresso Cup Plain White,3374,4
+709f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Hipnotiq Liquor,989,7
+719f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Salmon Steak - Cohoe 6 Oz,203,3
+729f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Walkers Special Old Whiskey,3593,7
+739f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Beef Cheek Fresh,2152,2
+749f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Jolt Cola,3116,2
+759f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Wine - White& Concha Y Toro,3218,6
+769f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Oka,2539,7
+779f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Gatorade - Lemon Lime,2113,5
+789f6b56-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Chillies& Crushed,493,7
+f537a95c-39ef-ed11-9f03-f46b8c8f0ef6,Kale - Red,1250,7
+f637a95c-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Rib Eye Aaa,1411,10
+f737a95c-39ef-ed11-9f03-f46b8c8f0ef6,Pears - Anjou,2806,3
+f837a95c-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Creemore,2267,5
+f937a95c-39ef-ed11-9f03-f46b8c8f0ef6,Absolut Citron,1093,9
+fa37a95c-39ef-ed11-9f03-f46b8c8f0ef6,Truffle Cups - Red,2993,7
+fb37a95c-39ef-ed11-9f03-f46b8c8f0ef6,Cut Wakame - Hanawakaba,3870,9
+fc37a95c-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Pullman& Sliced,1578,8
+fd37a95c-39ef-ed11-9f03-f46b8c8f0ef6,Creme De Cacao White,2294,10
+fe37a95c-39ef-ed11-9f03-f46b8c8f0ef6,French Kiss Vanilla,840,8
+ff37a95c-39ef-ed11-9f03-f46b8c8f0ef6,Paper Cocktail Umberlla 80 - 180,3510,5
+0038a95c-39ef-ed11-9f03-f46b8c8f0ef6,Cup - 8oz Coffee Perforated,1180,1
+0138a95c-39ef-ed11-9f03-f46b8c8f0ef6,Egg Patty Fried,3875,3
+0238a95c-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Pita& Mini,3912,3
+0338a95c-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Balbach Riverside,2856,6
+0438a95c-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Top Sirloin - Aaa,2118,4
+0538a95c-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Striploin Aa,3911,5
+0638a95c-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Sawmill Creek Autumn,870,4
+0738a95c-39ef-ed11-9f03-f46b8c8f0ef6,Salmon - Atlantic& Fresh& Whole,1717,8
+0838a95c-39ef-ed11-9f03-f46b8c8f0ef6,Milk - Chocolate 250 Ml,2375,1
+0938a95c-39ef-ed11-9f03-f46b8c8f0ef6,Duck - Legs,487,2
+0a38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Cookies - Amaretto,1755,3
+0b38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Black& Crushed,2415,8
+0c38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Pastry - Baked Cinnamon Stick,3515,3
+0d38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Olives - Green& Pitted,632,5
+0e38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Appetizer - Mango Chevre,1360,9
+0f38a95c-39ef-ed11-9f03-f46b8c8f0ef6,White Baguette,1354,2
+1038a95c-39ef-ed11-9f03-f46b8c8f0ef6,Horseradish Root,2649,5
+1138a95c-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Kobe Striploin,1401,9
+1238a95c-39ef-ed11-9f03-f46b8c8f0ef6,Oven Mitts - 15 Inch,853,7
+1338a95c-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - Base& Ultimate,1879,10
+1438a95c-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Sleemans Cream Ale,3192,5
+1538a95c-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Black& Crushed,432,1
+1638a95c-39ef-ed11-9f03-f46b8c8f0ef6,Lettuce - Treviso,2522,4
+1738a95c-39ef-ed11-9f03-f46b8c8f0ef6,Salmon Steak - Cohoe 8 Oz,328,4
+1838a95c-39ef-ed11-9f03-f46b8c8f0ef6,Mini - Vol Au Vents,3900,9
+1938a95c-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Rouladin& Sliced,1303,9
+1a38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Saskatoon Berries - Frozen,843,1
+1b38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Lemons,3533,8
+1c38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Chinese Foods - Plain Fried Rice,3447,2
+1d38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Tortillas - Flour& 10,733,5
+1e38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Lemonade - Kiwi& 591 Ml,450,6
+1f38a95c-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Manischewitz Concord,476,3
+2038a95c-39ef-ed11-9f03-f46b8c8f0ef6,Milk - Buttermilk,2596,8
+2138a95c-39ef-ed11-9f03-f46b8c8f0ef6,Skewers - Bamboo,2025,1
+2238a95c-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Lagoon Mango,3438,4
+1f19af62-39ef-ed11-9f03-f46b8c8f0ef6,Orange Roughy 4/6 Oz,3880,8
+2019af62-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Thousand Island,2599,8
+2119af62-39ef-ed11-9f03-f46b8c8f0ef6,Pie Shell - 9,523,9
+2219af62-39ef-ed11-9f03-f46b8c8f0ef6,Cinnamon - Ground,1428,8
+2319af62-39ef-ed11-9f03-f46b8c8f0ef6,Table Cloth 54x72 Colour,526,8
+2419af62-39ef-ed11-9f03-f46b8c8f0ef6,Apricots Fresh,985,7
+2519af62-39ef-ed11-9f03-f46b8c8f0ef6,Milk 2% 500 Ml,3382,9
+2619af62-39ef-ed11-9f03-f46b8c8f0ef6,Cookies - Amaretto,3904,10
+2719af62-39ef-ed11-9f03-f46b8c8f0ef6,Icecream Bar - Del Monte,1640,4
+2819af62-39ef-ed11-9f03-f46b8c8f0ef6,Spice - Pepper Portions,677,3
+2919af62-39ef-ed11-9f03-f46b8c8f0ef6,Savory,2953,10
+2a19af62-39ef-ed11-9f03-f46b8c8f0ef6,Syrup - Monin& Amaretta,3615,3
+2b19af62-39ef-ed11-9f03-f46b8c8f0ef6,Energy - Boo - Koo,3413,4
+2c19af62-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Tongue& Fresh,177,7
+2d19af62-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Ground& Extra Lean& Fresh,396,4
+2e19af62-39ef-ed11-9f03-f46b8c8f0ef6,Rosemary - Primerba& Paste,3749,10
+2f19af62-39ef-ed11-9f03-f46b8c8f0ef6,Contreau,1837,7
+3019af62-39ef-ed11-9f03-f46b8c8f0ef6,Containter - 3oz Microwave Rect.,949,5
+3119af62-39ef-ed11-9f03-f46b8c8f0ef6,Pie Shell - 9,964,10
+3219af62-39ef-ed11-9f03-f46b8c8f0ef6,Pears - Anjou,2236,5
+3319af62-39ef-ed11-9f03-f46b8c8f0ef6,Butter Balls Salted,3815,5
+3419af62-39ef-ed11-9f03-f46b8c8f0ef6,Cognac - Courvaisier,1950,8
+3519af62-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Woolwich Goat& Log,3687,7
+3619af62-39ef-ed11-9f03-f46b8c8f0ef6,Cake Circle& Foil& Scallop,2499,8
+3719af62-39ef-ed11-9f03-f46b8c8f0ef6,Yeast Dry - Fermipan,2732,6
+3819af62-39ef-ed11-9f03-f46b8c8f0ef6,Shrimp - 21/25& Peel And Deviened,2780,3
+3919af62-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - Enoki& Fresh,117,3
+3a19af62-39ef-ed11-9f03-f46b8c8f0ef6,Towel Multifold,1628,9
+3b19af62-39ef-ed11-9f03-f46b8c8f0ef6,Basil - Fresh,1236,7
+3c19af62-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Dark Rye,3168,1
+3d19af62-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Oka,1881,1
+3e19af62-39ef-ed11-9f03-f46b8c8f0ef6,Roe - Flying Fish,2558,1
+3f19af62-39ef-ed11-9f03-f46b8c8f0ef6,Cranberries - Frozen,930,9
+4019af62-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Gypsy Pepper,1817,9
+4119af62-39ef-ed11-9f03-f46b8c8f0ef6,Longos - Grilled Chicken With,2585,4
+4219af62-39ef-ed11-9f03-f46b8c8f0ef6,Noodles - Steamed Chow Mein,1066,5
+4319af62-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Back Ribs,1442,4
+4419af62-39ef-ed11-9f03-f46b8c8f0ef6,Syrup - Pancake,595,4
+4519af62-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - Morel Frozen,805,4
+4619af62-39ef-ed11-9f03-f46b8c8f0ef6,Sea Bass - Whole,1083,7
+4719af62-39ef-ed11-9f03-f46b8c8f0ef6,Chocolate - Milk Coating,3869,3
+4819af62-39ef-ed11-9f03-f46b8c8f0ef6,Cake - French Pear Tart,361,2
+4919af62-39ef-ed11-9f03-f46b8c8f0ef6,Tomatoes Tear Drop Yellow,1213,6
+4a19af62-39ef-ed11-9f03-f46b8c8f0ef6,Fuji Apples,3583,3
+4b19af62-39ef-ed11-9f03-f46b8c8f0ef6,Mushrooms - Black& Dried,1871,8
+4c19af62-39ef-ed11-9f03-f46b8c8f0ef6,Cabbage - Red,2566,1
+8b46df68-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Lasagna& Dry,3833,1
+8c46df68-39ef-ed11-9f03-f46b8c8f0ef6,Beef Wellington,2792,2
+8d46df68-39ef-ed11-9f03-f46b8c8f0ef6,Avocado,161,3
+8e46df68-39ef-ed11-9f03-f46b8c8f0ef6,Clam Nectar,2834,9
+8f46df68-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Upper Canada Light,1134,9
+9046df68-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Ham Hocks - Smoked,1286,7
+9146df68-39ef-ed11-9f03-f46b8c8f0ef6,Cake - Cake Sheet Macaroon,353,2
+9246df68-39ef-ed11-9f03-f46b8c8f0ef6,Flavouring Vanilla Artificial,224,9
+9346df68-39ef-ed11-9f03-f46b8c8f0ef6,Nut - Almond& Blanched& Ground,3735,1
+9446df68-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Hollandaise,1880,6
+9546df68-39ef-ed11-9f03-f46b8c8f0ef6,Pie Shells 10,2718,9
+9646df68-39ef-ed11-9f03-f46b8c8f0ef6,Turkey - Oven Roast Breast,2877,3
+9746df68-39ef-ed11-9f03-f46b8c8f0ef6,Truffle - Peelings,2782,7
+9846df68-39ef-ed11-9f03-f46b8c8f0ef6,Spic And Span All Purpose,853,7
+9946df68-39ef-ed11-9f03-f46b8c8f0ef6,Tea - Herbal Orange Spice,3489,5
+9a46df68-39ef-ed11-9f03-f46b8c8f0ef6,Clams - Littleneck& Whole,2561,10
+9b46df68-39ef-ed11-9f03-f46b8c8f0ef6,Chives - Fresh,430,3
+9c46df68-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Tenderloin& Frozen,1176,8
+9d46df68-39ef-ed11-9f03-f46b8c8f0ef6,Vinegar - Cider,1092,8
+9e46df68-39ef-ed11-9f03-f46b8c8f0ef6,Onions - Green,3665,8
+9f46df68-39ef-ed11-9f03-f46b8c8f0ef6,Sugar - Invert,1120,5
+a046df68-39ef-ed11-9f03-f46b8c8f0ef6,Broccoli - Fresh,1904,6
+a146df68-39ef-ed11-9f03-f46b8c8f0ef6,Tomatoes - Plum& Canned,244,6
+a246df68-39ef-ed11-9f03-f46b8c8f0ef6,Banana - Leaves,1899,7
+a346df68-39ef-ed11-9f03-f46b8c8f0ef6,Butter - Pod,3865,6
+a446df68-39ef-ed11-9f03-f46b8c8f0ef6,Parasol Pick Stir Stick,443,6
+a546df68-39ef-ed11-9f03-f46b8c8f0ef6,Cocoa Powder - Dutched,2989,6
+a646df68-39ef-ed11-9f03-f46b8c8f0ef6,Salmon - Fillets,401,3
+a746df68-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Tomato Mush. Florentine,136,2
+a846df68-39ef-ed11-9f03-f46b8c8f0ef6,Sunflower Seed Raw,1121,9
+a946df68-39ef-ed11-9f03-f46b8c8f0ef6,Vodka - Smirnoff,639,7
+aa46df68-39ef-ed11-9f03-f46b8c8f0ef6,Wine - White& Concha Y Toro,3287,9
+ab46df68-39ef-ed11-9f03-f46b8c8f0ef6,Vinegar - Red Wine,2648,8
+ac46df68-39ef-ed11-9f03-f46b8c8f0ef6,Liquid Aminios Acid - Braggs,2058,7
+ad46df68-39ef-ed11-9f03-f46b8c8f0ef6,Chips Potato Swt Chilli Sour,2270,2
+ae46df68-39ef-ed11-9f03-f46b8c8f0ef6,Muffin Mix - Oatmeal,3517,10
+af46df68-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Hock And Feet Attached,2105,3
+b046df68-39ef-ed11-9f03-f46b8c8f0ef6,Huck Towels White,2575,7
+b146df68-39ef-ed11-9f03-f46b8c8f0ef6,Oil - Canola,3723,5
+b246df68-39ef-ed11-9f03-f46b8c8f0ef6,Salmon Atl.whole 8 - 10 Lb,2420,10
+b346df68-39ef-ed11-9f03-f46b8c8f0ef6,Sage - Rubbed,3090,3
+b446df68-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Balbach Riverside,3859,5
+b546df68-39ef-ed11-9f03-f46b8c8f0ef6,Beans - Kidney& Canned,3418,8
+b646df68-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Marlbourough Sauv Blanc,3135,4
+b746df68-39ef-ed11-9f03-f46b8c8f0ef6,Lamb - Loin Chops,1524,2
+b846df68-39ef-ed11-9f03-f46b8c8f0ef6,Crab - Back Fin Meat& Canned,3965,1
+b946df68-39ef-ed11-9f03-f46b8c8f0ef6,Glaze - Clear,2450,1
+ba46df68-39ef-ed11-9f03-f46b8c8f0ef6,Broom Handle,1609,9
+bb46df68-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Corn Muffaletta,3193,5
+bc46df68-39ef-ed11-9f03-f46b8c8f0ef6,Parsley - Dried,991,10
+08bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Bread Fig And Almond,1340,1
+09bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Mushrooms - Black& Dried,3376,9
+0abbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Muffin Orange Individual,1079,7
+0bbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Bag - Clear 7 Lb,330,4
+0cbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Cheese Cheddar Processed,1459,4
+0dbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Sardines,296,9
+0ebbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Campbells Chili,3063,7
+0fbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Dehydrated Kelp Kombo,1491,8
+10bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Beer - True North Lager,2859,2
+11bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,7up Diet& 355 Ml,571,8
+12bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Bread Crumbs - Japanese Style,1750,6
+13bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Bag - Clear 7 Lb,3702,1
+14bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Knorr& Veg / Beef,3888,1
+15bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Cake - Pancake,305,8
+16bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Placido Pinot Grigo,2862,10
+17bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Lasagne& Fresh,2671,5
+18bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Cookie Dough - Chocolate Chip,2443,5
+19bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Nacho Chips,304,3
+1abbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Yoplait Drink,3891,5
+1bbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Seedlings - Clamshell,460,6
+1cbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Chocolate Liqueur - Godet White,1808,9
+1dbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Vaccum Bag - 14x20,808,10
+1ebbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Truffle Cups - Red,3444,6
+1fbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Blue Nun Qualitatswein,353,2
+20bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Pear - Prickly,3976,4
+21bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Daikon Radish,2890,5
+22bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Sausage - Meat,1923,4
+23bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Soup Bowl Clear 8oz92008,3394,9
+24bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Flower - Commercial Bronze,1924,5
+25bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Flour - Chickpea,1611,8
+26bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Horseradish - Prepared,1975,5
+27bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Cheese / Spinach Bauletti,1065,2
+28bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Lid - 0090 Clear,1456,7
+29bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Cabbage - Green,3633,6
+2abbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Orange Roughy 4/6 Oz,2171,7
+2bbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Penne& Rigate& Dry,3202,10
+2cbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Raspberries - Frozen,880,4
+2dbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Asiago,780,4
+2ebbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Napkin - Beverage 1 Ply,1204,2
+2fbbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Versatainer Nc - 9388,3132,7
+30bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Munchies Honey Sweet Trail Mix,802,5
+31bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Phyllo Dough,478,5
+32bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Bernaise& Mix,468,2
+33bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Juice Peach Nectar,2499,8
+34bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Basil - Primerba& Paste,372,7
+35bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Mini - Vol Au Vents,3292,6
+36bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Cottage Cheese,2093,9
+37bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Chinese Foods - Chicken Wing,2001,5
+38bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Ham - Cooked Bayonne Tinned,2092,9
+39bbdf6e-39ef-ed11-9f03-f46b8c8f0ef6,Red Snapper - Fresh& Whole,737,5
+cefd0575-39ef-ed11-9f03-f46b8c8f0ef6,Artichokes - Jerusalem,3600,5
+cffd0575-39ef-ed11-9f03-f46b8c8f0ef6,Mayonnaise - Individual Pkg,3333,9
+d0fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Graham Cracker Mix,2733,2
+d1fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Brandy Apricot,2672,1
+d2fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Island Oasis - Raspberry,3011,4
+d3fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Vanilla Beans,2831,7
+d4fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Oneshot Automatic Soap System,529,5
+d5fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Capers - Pickled,716,9
+d6fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Beef Tenderloin Aaa,3703,6
+d7fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Quail - Whole& Bone - In,516,8
+d8fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Danishes - Mini Raspberry,3520,4
+d9fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Corn Shoots,3785,6
+dafd0575-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom Morel Fresh,2409,5
+dbfd0575-39ef-ed11-9f03-f46b8c8f0ef6,Eggroll,2027,2
+dcfd0575-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Fume Blanc Fetzer,3134,3
+ddfd0575-39ef-ed11-9f03-f46b8c8f0ef6,Spoon - Soup& Plastic,185,4
+defd0575-39ef-ed11-9f03-f46b8c8f0ef6,Squid - U 5,3732,4
+dffd0575-39ef-ed11-9f03-f46b8c8f0ef6,Tarragon - Primerba& Paste,3833,7
+e0fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Soup Bowl Clear 8oz92008,1478,5
+e1fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Tuna - Salad Premix,1414,8
+e2fd0575-39ef-ed11-9f03-f46b8c8f0ef6,The Pop Shoppe - Black Cherry,1454,4
+e3fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Tart Shells - Savory& 2,2393,3
+e4fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Coriander - Seed,583,4
+e5fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Cooked& Corned,555,3
+e6fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Carrots - Mini& Stem On,376,8
+e7fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Cheddarsliced,1672,1
+e8fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Burger,1931,10
+e9fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Angel Hair,2834,6
+eafd0575-39ef-ed11-9f03-f46b8c8f0ef6,Ice Cream Bar - Drumstick,2582,2
+ebfd0575-39ef-ed11-9f03-f46b8c8f0ef6,Wine - White& Schroder And Schyl,352,6
+ecfd0575-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Sausage& Medium,2661,2
+edfd0575-39ef-ed11-9f03-f46b8c8f0ef6,Red Cod Fillets - 225g,2257,6
+eefd0575-39ef-ed11-9f03-f46b8c8f0ef6,Island Oasis - Peach Daiquiri,2486,5
+effd0575-39ef-ed11-9f03-f46b8c8f0ef6,Apple - Macintosh,241,10
+f0fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Dikon,2377,4
+f1fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Sugar - Individual Portions,2795,4
+f2fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Cakes Assorted,1356,1
+f3fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Soup Campbells,3206,2
+f4fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Cotes Du Rhone,370,9
+f5fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Scotch Bonnet,360,10
+f6fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Bar - Granola Trail Mix Fruit Nut,3075,8
+f7fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Cheddar& Old White,2927,6
+f8fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Iced Tea - Lemon& 340ml,1111,10
+f9fd0575-39ef-ed11-9f03-f46b8c8f0ef6,Chinese Foods - Chicken,3146,2
+fafd0575-39ef-ed11-9f03-f46b8c8f0ef6,Table Cloth 54x72 Colour,214,6
+fbfd0575-39ef-ed11-9f03-f46b8c8f0ef6,Fireball Whisky,3619,9
+fcfd0575-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Blue,2697,6
+fdfd0575-39ef-ed11-9f03-f46b8c8f0ef6,Olives - Green& Pitted,916,7
+cf863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Chips - Miss Vickies,3991,4
+d0863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Muffin Mix - Chocolate Chip,3330,6
+d1863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Wheat - Soft Kernal Of Wheat,3556,7
+d2863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Marinara,3724,4
+d3863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Duck - Breast,2442,4
+d4863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Crab - Meat,3836,2
+d5863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Spinach - Spinach Leaf,3556,10
+d6863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Sorrano,1054,7
+d7863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Puree - Mango,1043,4
+d8863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Pie Shell - 9,541,7
+d9863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Cabbage - Green,606,4
+da863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Soave Folonari,3145,1
+db863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Salmon Atl.whole 8 - 10 Lb,2342,2
+dc863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Boursin& Garlic / Herbs,1401,1
+dd863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Pepper Squash,3712,10
+de863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Two Oceans Sauvignon,791,4
+df863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Knuckle,2792,10
+e0863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Scallops - 10/20,3036,4
+e1863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Ezy Change Mophandle,1891,9
+e2863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Kindney& Whole,3116,3
+e3863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Lamb - Shoulder,720,1
+e4863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Mushrooms - Black& Dried,1070,1
+e5863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Ham - Virginia,2510,6
+e6863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Hollandaise,693,5
+e7863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Cornflakes,2630,6
+e8863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Wine - White& Schroder And Schyl,1542,10
+e9863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Cornish Hen,3944,1
+ea863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Tofu - Soft,1338,5
+eb863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Beef Ground Medium,2291,4
+ec863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Bok Choy - Baby,3268,6
+ed863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Cooked& Corned,2256,4
+ee863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Beets - Candy Cane& Organic,401,8
+ef863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Marjoram - Fresh,2019,3
+f0863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Orecchiette,3727,1
+f1863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - Ground,142,8
+f2863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Pepsi - Diet& 355 Ml,2585,6
+f3863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Raisin - Dark,472,10
+f4863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Back Ribs,100,9
+f5863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Longos - Penne With Pesto,1560,7
+f6863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Shrimp - Black Tiger 8 - 12,1890,7
+f7863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Gypsy Pepper,2889,4
+f8863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Chicken Breast Wing On,1587,5
+f9863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Chocolate - Sugar Free Semi Choc,3635,8
+fa863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Cake Circle& Paprus,1219,3
+fb863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Provimi Inside,2371,8
+fc863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Coffee - French Vanilla Frothy,2792,1
+fd863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - Diced& Cooked,3966,2
+fe863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Sponge Cake Mix - Vanilla,2473,2
+ff863d7b-39ef-ed11-9f03-f46b8c8f0ef6,Steampan - Half Size Shallow,3897,6
+00873d7b-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Touraine Azay - Le - Rideau,3012,5
+38a97581-39ef-ed11-9f03-f46b8c8f0ef6,Oysters - Smoked,2154,7
+39a97581-39ef-ed11-9f03-f46b8c8f0ef6,Fond - Chocolate,3548,1
+3aa97581-39ef-ed11-9f03-f46b8c8f0ef6,Soup Campbells,1520,8
+3ba97581-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Barolo Fontanafredda,2781,7
+3ca97581-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Sogrape Mateus Rose,735,2
+3da97581-39ef-ed11-9f03-f46b8c8f0ef6,Cherries - Maraschino&jar,234,5
+3ea97581-39ef-ed11-9f03-f46b8c8f0ef6,Pail With Metal Handle 16l White,855,9
+3fa97581-39ef-ed11-9f03-f46b8c8f0ef6,Syrup - Monin - Granny Smith,533,8
+40a97581-39ef-ed11-9f03-f46b8c8f0ef6,Carbonated Water - Peach,3596,2
+41a97581-39ef-ed11-9f03-f46b8c8f0ef6,Daves Island Stinger,671,6
+42a97581-39ef-ed11-9f03-f46b8c8f0ef6,Potatoes - Peeled,3800,8
+43a97581-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Tenderloin& Fresh,599,3
+44a97581-39ef-ed11-9f03-f46b8c8f0ef6,Cup Translucent 9 Oz,1034,3
+45a97581-39ef-ed11-9f03-f46b8c8f0ef6,Turnip - Wax,830,1
+46a97581-39ef-ed11-9f03-f46b8c8f0ef6,Appetizer - Assorted Box,900,6
+47a97581-39ef-ed11-9f03-f46b8c8f0ef6,Sugar - Palm,1313,3
+48a97581-39ef-ed11-9f03-f46b8c8f0ef6,Ham Black Forest,3375,2
+49a97581-39ef-ed11-9f03-f46b8c8f0ef6,Fenngreek Seed,3855,8
+4aa97581-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Black& Crushed,2367,8
+4ba97581-39ef-ed11-9f03-f46b8c8f0ef6,Vinegar - Balsamic& White,898,5
+4ca97581-39ef-ed11-9f03-f46b8c8f0ef6,Irish Cream - Baileys,905,3
+4da97581-39ef-ed11-9f03-f46b8c8f0ef6,Macaroons - Two Bite Choc,2252,3
+4ea97581-39ef-ed11-9f03-f46b8c8f0ef6,Pie Filling - Apple,2455,10
+4fa97581-39ef-ed11-9f03-f46b8c8f0ef6,Fish - Artic Char& Cold Smoked,897,4
+50a97581-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Gravy& Au Jus& Mix,3033,1
+51a97581-39ef-ed11-9f03-f46b8c8f0ef6,Cookies Oatmeal Raisin,1638,10
+52a97581-39ef-ed11-9f03-f46b8c8f0ef6,Dried Apple,1069,3
+53a97581-39ef-ed11-9f03-f46b8c8f0ef6,V8 Pet,254,2
+54a97581-39ef-ed11-9f03-f46b8c8f0ef6,Truffle Cups - White Paper,3844,1
+55a97581-39ef-ed11-9f03-f46b8c8f0ef6,Mix Pina Colada,2885,4
+56a97581-39ef-ed11-9f03-f46b8c8f0ef6,Longos - Burritos,3277,5
+57a97581-39ef-ed11-9f03-f46b8c8f0ef6,Coffee - Dark Roast,2393,4
+58a97581-39ef-ed11-9f03-f46b8c8f0ef6,Macaroons - Two Bite Choc,916,1
+59a97581-39ef-ed11-9f03-f46b8c8f0ef6,Icecream - Dstk Super Cone,240,6
+5aa97581-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Marlbourough Sauv Blanc,3709,6
+5ba97581-39ef-ed11-9f03-f46b8c8f0ef6,Ketchup - Tomato,2095,3
+5ca97581-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Oka,3245,1
+5da97581-39ef-ed11-9f03-f46b8c8f0ef6,Tamarillo,2365,9
+5ea97581-39ef-ed11-9f03-f46b8c8f0ef6,Calypso - Lemonade,2636,2
+5fa97581-39ef-ed11-9f03-f46b8c8f0ef6,Coffee Cup 16oz Foam,2233,8
+60a97581-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Rolls& Corn,1697,5
+61a97581-39ef-ed11-9f03-f46b8c8f0ef6,Shrimp - 31/40,2997,1
+62a97581-39ef-ed11-9f03-f46b8c8f0ef6,Vinegar - Balsamic& White,3396,6
+63a97581-39ef-ed11-9f03-f46b8c8f0ef6,Tuna - Bluefin,282,4
+64a97581-39ef-ed11-9f03-f46b8c8f0ef6,Daves Island Stinger,909,5
+65a97581-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Orange& Concentrate,2570,3
+66a97581-39ef-ed11-9f03-f46b8c8f0ef6,Tart - Butter Plain Squares,3121,3
+67a97581-39ef-ed11-9f03-f46b8c8f0ef6,Lamb - Leg& Diced,1942,9
+68a97581-39ef-ed11-9f03-f46b8c8f0ef6,Garlic - Elephant,2194,3
+69a97581-39ef-ed11-9f03-f46b8c8f0ef6,Squeeze Bottle,3029,8
+c3738287-39ef-ed11-9f03-f46b8c8f0ef6,Tomato - Green,1777,9
+c4738287-39ef-ed11-9f03-f46b8c8f0ef6,Salmon Steak - Cohoe 8 Oz,129,5
+c5738287-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Campbells& Spinach Crm,2802,7
+c6738287-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Fish 25 Ozf Bottle,1529,9
+c7738287-39ef-ed11-9f03-f46b8c8f0ef6,Sprite& Diet - 355ml,3508,1
+c8738287-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Bones,186,1
+c9738287-39ef-ed11-9f03-f46b8c8f0ef6,Pastry - French Mini Assorted,903,6
+ca738287-39ef-ed11-9f03-f46b8c8f0ef6,Squid - Breaded,1656,5
+cb738287-39ef-ed11-9f03-f46b8c8f0ef6,Potatoes - Parissienne,901,10
+cc738287-39ef-ed11-9f03-f46b8c8f0ef6,Pur Value,3546,6
+cd738287-39ef-ed11-9f03-f46b8c8f0ef6,Bar - Granola Trail Mix Fruit Nut,175,4
+ce738287-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Clamato& 341 Ml,3474,8
+cf738287-39ef-ed11-9f03-f46b8c8f0ef6,Squeeze Bottle,3527,5
+d0738287-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Lasagne& Fresh,296,1
+d1738287-39ef-ed11-9f03-f46b8c8f0ef6,Irish Cream - Butterscotch,2644,6
+d2738287-39ef-ed11-9f03-f46b8c8f0ef6,Bananas,3866,7
+d3738287-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Spumante Bambino White,3215,7
+d4738287-39ef-ed11-9f03-f46b8c8f0ef6,Olive - Spread Tapenade,1185,1
+d5738287-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Tongue& Cooked,497,9
+d6738287-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Balsamic Viniagrette,1930,6
+d7738287-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Top Butt,3794,6
+d8738287-39ef-ed11-9f03-f46b8c8f0ef6,Container - Foam Dixie 12 Oz,1997,3
+d9738287-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Campbells Bean Medley,2484,5
+da738287-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Roll& Calabrese,2252,5
+db738287-39ef-ed11-9f03-f46b8c8f0ef6,Veal - Liver,2455,2
+dc738287-39ef-ed11-9f03-f46b8c8f0ef6,Swiss Chard,561,2
+dd738287-39ef-ed11-9f03-f46b8c8f0ef6,Ecolab - Power Fusion,988,2
+de738287-39ef-ed11-9f03-f46b8c8f0ef6,Ice Cream Bar - Drumstick,3469,2
+df738287-39ef-ed11-9f03-f46b8c8f0ef6,Lidsoupcont Rp12dn,1150,4
+e0738287-39ef-ed11-9f03-f46b8c8f0ef6,Yoplait - Strawbrasp Peac,2515,7
+e1738287-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Mozzarella& Shredded,1237,7
+e2738287-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Brie& Cups 125g,2283,5
+e3738287-39ef-ed11-9f03-f46b8c8f0ef6,Cookies - Amaretto,2964,3
+e4738287-39ef-ed11-9f03-f46b8c8f0ef6,Nantucket - Orange Mango Cktl,3815,7
+e5738287-39ef-ed11-9f03-f46b8c8f0ef6,Beets - Candy Cane& Organic,2950,3
+e6738287-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Cheddar With Claret,2013,9
+e7738287-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Onion Focaccia,3401,10
+e8738287-39ef-ed11-9f03-f46b8c8f0ef6,Swordfish Loin Portions,1683,5
+e9738287-39ef-ed11-9f03-f46b8c8f0ef6,Vinegar - Balsamic,3921,3
+ea738287-39ef-ed11-9f03-f46b8c8f0ef6,Pastry - Key Limepoppy Seed Tea,3672,8
+eb738287-39ef-ed11-9f03-f46b8c8f0ef6,Dry Ice,394,10
+ec738287-39ef-ed11-9f03-f46b8c8f0ef6,Fuji Apples,106,10
+ed738287-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Shoulder,2048,7
+ee738287-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Cheddarsliced,719,3
+ef738287-39ef-ed11-9f03-f46b8c8f0ef6,Coffee - Irish Cream,3756,3
+f0738287-39ef-ed11-9f03-f46b8c8f0ef6,Liqueur Banana& Ramazzotti,1749,5
+f1738287-39ef-ed11-9f03-f46b8c8f0ef6,Iced Tea - Lemon& 340ml,1461,7
+f2738287-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Kidney,2155,4
+d6dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Leeks - Baby& White,821,1
+d7dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Broom - Push,1153,8
+d8dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Cheese Cloth No 100,2362,7
+d9dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Gatorade - Xfactor Berry,226,6
+dadc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Yucca,1290,5
+dbdc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Sea Urchin,2724,3
+dcdc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Celery,595,3
+dddc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Tea - Apple Green Tea,2830,6
+dedc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Food Colouring - Green,3463,5
+dfdc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Potatoes - Yukon Gold 5 Oz,1449,6
+e0dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Vacuum Bags 12x16,1797,4
+e1dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Hickory Smoke& Liquid,1966,2
+e2dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Venison - Racks Frenched,2147,6
+e3dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Glucose,3657,2
+e4dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Spinach - Spinach Leaf,2430,5
+e5dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - Porcini Frozen,3799,3
+e6dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - St. Paulin,2288,10
+e7dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Soup Campbells - Tomato Bisque,377,10
+e8dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Berry Brulee,2267,6
+e9dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Cookies Almond Hazelnut,1328,10
+eadc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Sage - Fresh,527,2
+ebdc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Brie& Triple Creme,2405,3
+ecdc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Canada Dry,2204,5
+eddc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Grand Marnier,2947,2
+eedc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Havarti& Salsa,1280,5
+efdc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Oil - Food& Lacquer Spray,308,2
+f0dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Turnip - Mini,1968,5
+f1dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Cake - Cheese Cake 9 Inch,1953,4
+f2dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Sheep Milk,2774,2
+f3dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Cookies - Fortune,1183,10
+f4dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Slt - Individual Portions,460,9
+f5dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Chocolate - Dark Callets,2008,1
+f6dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Plastic Arrow Stir Stick,405,10
+f7dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Towel Multifold,1285,5
+f8dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Lidsoupcont Rp12dn,3220,4
+f9dc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Broom And Broom Rack White,1817,10
+fadc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Sobe - Lizard Fuel,820,7
+fbdc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Clams - Canned,3957,9
+fcdc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Anchovy Fillets,3717,6
+fddc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Avocado,838,7
+fedc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Dates,2368,2
+ffdc7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Salt And Pepper Mix - Black,3909,9
+00dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Chick Peas - Canned,875,1
+01dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Shrimp - 16 - 20 Cooked& Peeled,284,2
+02dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - White Meat& No Tender,212,6
+03dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Marlbourough Sauv Blanc,2337,8
+04dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Melon - Honey Dew,337,2
+05dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Asiago,1635,7
+06dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Mix - Cappucino Cocktail,123,5
+07dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Guiness,3502,2
+08dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Oil - Shortening&liqud& Fry,3825,7
+09dd7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Olives - Black& Pitted,1240,1
+0add7f8d-39ef-ed11-9f03-f46b8c8f0ef6,Grenadine,2994,2
+6bb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Muskoka Cream Ale,1336,10
+6cb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Sprouts - Pea,1445,4
+6db2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Gewurztraminer Pierre,2812,4
+6eb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Saskatoon Berries - Frozen,2730,6
+6fb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Grapefruit - Pink,3984,8
+70b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Wheat - Soft Kernal Of Wheat,3007,9
+71b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - La Sauvagine,1690,4
+72b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Orange,1672,6
+73b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Penne& Rigate& Dry,529,8
+74b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Pasta - Ravioli,211,4
+75b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Muffin Hinge - 211n,103,4
+76b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Cleaner - Bleach,1939,1
+77b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Beef Wellington,1453,8
+78b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Pail With Metal Handle 16l White,302,8
+79b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Tomatoes Tear Drop Yellow,615,5
+7ab2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Contreau,1920,8
+7bb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Split Peas - Green& Dry,3298,1
+7cb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Corn Shoots,2605,5
+7db2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Brick With Pepper,671,5
+7eb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Sobe - Green Tea,928,5
+7fb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Pumpkin - Seed,3666,10
+80b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Icecream - Dstk Strw Chseck,358,9
+81b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Apple 284ml,498,2
+82b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Island Oasis - Banana Daiquiri,2011,7
+83b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Buffalo - Tenderloin,1436,6
+84b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Bread - French Baquette,3408,10
+85b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Pineapple - Canned& Rings,3859,9
+86b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Pastrami,1291,3
+87b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Chips - Doritos,2342,7
+88b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Chips Potato Salt Vinegar 43g,1333,10
+89b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Red& Black Opal Shiraz,3811,3
+8ab2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Piper Heidsieck Brut,3586,7
+8bb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Port - 74 Brights,2008,7
+8cb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Oil - Truffle& Black,3624,9
+8db2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Ecolab - Mikroklene 4/4 L,2511,9
+8eb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Paste - Black Olive,986,3
+8fb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Ice Cream - Fudge Bars,517,3
+90b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Mcguinness - Blue Curacao,1454,7
+91b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Fontanafredda Barolo,1124,9
+92b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Gingerale - Schweppes& 355 Ml,2939,3
+93b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Bar Special K,527,8
+94b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Guava,3895,7
+95b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Nantucket Apple Juice,3801,2
+96b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Harrow Estates& Vidal,616,10
+97b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Sea Bass - Fillets,1530,10
+98b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Lamb - Leg& Boneless,1730,2
+99b2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Lemonade - Kiwi& 591 Ml,1024,7
+9ab2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Sour Sticks With Onion,3929,4
+9bb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Mini Hamburger Bun,874,8
+9cb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Shrimp - Tiger 21/25,689,7
+9db2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Muffin - Mix - Mango Sour Cherry,191,1
+9eb2ad93-39ef-ed11-9f03-f46b8c8f0ef6,Salmon - Canned,1715,1
+0f68e399-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Fish 25 Ozf Bottle,2910,7
+1068e399-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Blue,2297,7
+1168e399-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - White Button,653,9
+1268e399-39ef-ed11-9f03-f46b8c8f0ef6,Bar Mix - Lime,1234,7
+1368e399-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Cranberry 284ml,2058,8
+1468e399-39ef-ed11-9f03-f46b8c8f0ef6,Cocoa Feuilletine,3679,8
+1568e399-39ef-ed11-9f03-f46b8c8f0ef6,Chicken - Whole Fryers,3762,5
+1668e399-39ef-ed11-9f03-f46b8c8f0ef6,Salmon - Sockeye Raw,3318,2
+1768e399-39ef-ed11-9f03-f46b8c8f0ef6,Onions - Spanish,2566,8
+1868e399-39ef-ed11-9f03-f46b8c8f0ef6,Sprouts - Peppercress,1354,6
+1968e399-39ef-ed11-9f03-f46b8c8f0ef6,Cheese - Le Cru Du Clocher,3515,6
+1a68e399-39ef-ed11-9f03-f46b8c8f0ef6,Herb Du Provence - Primerba,840,7
+1b68e399-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Taylors Reserve,310,10
+1c68e399-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Red& Gallo& Merlot,3433,10
+1d68e399-39ef-ed11-9f03-f46b8c8f0ef6,Wonton Wrappers,1787,5
+1e68e399-39ef-ed11-9f03-f46b8c8f0ef6,Table Cloth 120 Round White,2959,7
+1f68e399-39ef-ed11-9f03-f46b8c8f0ef6,Fennel,2246,8
+2068e399-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Kidney,600,1
+2168e399-39ef-ed11-9f03-f46b8c8f0ef6,Tomatoes - Yellow Hot House,2123,1
+2268e399-39ef-ed11-9f03-f46b8c8f0ef6,Basil - Dry& Rubbed,1468,7
+2368e399-39ef-ed11-9f03-f46b8c8f0ef6,Nectarines,3865,4
+2468e399-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Clam Chowder& Dry Mix,815,7
+2568e399-39ef-ed11-9f03-f46b8c8f0ef6,Coconut - Whole,3937,2
+2668e399-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Magnotta - Cab Franc,1464,1
+2768e399-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - Chantrelle& Fresh,996,4
+2868e399-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Orange& Concentrate,449,7
+2968e399-39ef-ed11-9f03-f46b8c8f0ef6,Tahini Paste,3359,10
+2a68e399-39ef-ed11-9f03-f46b8c8f0ef6,Milk 2% 500 Ml,3572,3
+2b68e399-39ef-ed11-9f03-f46b8c8f0ef6,Gherkin,512,5
+2c68e399-39ef-ed11-9f03-f46b8c8f0ef6,Cafe Royale,935,10
+2d68e399-39ef-ed11-9f03-f46b8c8f0ef6,Cinnamon Rolls,3334,8
+2e68e399-39ef-ed11-9f03-f46b8c8f0ef6,Nori Sea Weed - Gold Label,1257,5
+2f68e399-39ef-ed11-9f03-f46b8c8f0ef6,Snapple Lemon Tea,1318,5
+3068e399-39ef-ed11-9f03-f46b8c8f0ef6,Tuna - Yellowfin,267,2
+3168e399-39ef-ed11-9f03-f46b8c8f0ef6,Crush - Cream Soda,3048,3
+3268e399-39ef-ed11-9f03-f46b8c8f0ef6,Compound - Strawberry,961,3
+3368e399-39ef-ed11-9f03-f46b8c8f0ef6,Pepper - Gypsy Pepper,3169,1
+3468e399-39ef-ed11-9f03-f46b8c8f0ef6,Cattail Hearts,1958,8
+3568e399-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Rolls& Corn,2790,10
+3668e399-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Guiness,1280,10
+3768e399-39ef-ed11-9f03-f46b8c8f0ef6,Soho Lychee Liqueur,2296,1
+3868e399-39ef-ed11-9f03-f46b8c8f0ef6,Carrots - Mini Red Organic,1199,10
+3968e399-39ef-ed11-9f03-f46b8c8f0ef6,Apple - Macintosh,2197,5
+3a68e399-39ef-ed11-9f03-f46b8c8f0ef6,Lettuce - Green Leaf,776,7
+3b68e399-39ef-ed11-9f03-f46b8c8f0ef6,Marjoram - Dried& Rubbed,1768,10
+3c68e399-39ef-ed11-9f03-f46b8c8f0ef6,Compound - Rum,1890,10
+3d68e399-39ef-ed11-9f03-f46b8c8f0ef6,Nescafe - Frothy French Vanilla,2391,2
+3e68e399-39ef-ed11-9f03-f46b8c8f0ef6,Lotus Leaves,3932,8
+4068e399-39ef-ed11-9f03-f46b8c8f0ef6,Mudslide,939,5
+4168e399-39ef-ed11-9f03-f46b8c8f0ef6,Lettuce - Romaine& Heart,166,2
+4268e399-39ef-ed11-9f03-f46b8c8f0ef6,Clams - Canned,3064,10
+629e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Rolled Oats,1340,8
+639e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Ostrich - Prime Cut,486,9
+649e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Mountain Dew,1273,4
+659e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Oil - Sunflower,3243,6
+669e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Chives - Fresh,777,9
+679e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Tendrils - Baby Pea& Organic,2605,3
+689e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Sour Batard,2426,2
+699e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Nescafe - Frothy French Vanilla,1534,8
+6a9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Chocolate Bar - Oh Henry,3144,4
+6b9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Rib Roast& Cap On,207,8
+6c9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Dried Cherries,509,6
+6d9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Coffee Beans - Chocolate,1622,10
+6e9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Beer - Creemore,2853,9
+6f9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Prunes - Pitted,1195,7
+709e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Loin& Center Cut,1399,3
+719e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Syrup - Monin - Granny Smith,711,9
+729e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Truffle Cups Green,3830,10
+739e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Silicone Parch. 16.3x24.3,1435,2
+749e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Cream Of Broccoli& Dry,1616,7
+759e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Dried Cranberries,3408,1
+769e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Montecillo Rioja Crianza,2121,6
+779e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Doilies - 12& Paper,737,8
+789e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Milk - Skim,3772,1
+799e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Beef - Salted,1050,10
+7a9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Crackers - Graham,238,5
+7b9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Tomatoes Tear Drop,2726,5
+7c9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Mushroom - Chantrelle& Fresh,2966,4
+7d9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Bagel - Everything Presliced,2217,2
+7e9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Red& Pelee Island Merlot,149,8
+7f9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Puff Pastry - Sheets,2445,7
+809e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Tamarind Paste,2790,5
+819e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Macaroons - Two Bite Choc,1545,8
+829e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Beans - Fava& Canned,1595,6
+839e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Beets - Mini Golden,1166,6
+849e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Boston Clam Chowder,1056,5
+859e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Salt - Table,362,4
+869e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Pinot Noir Mondavi Coastal,579,1
+879e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Dr. Pepper - 355ml,1872,1
+889e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Icecream Bar - Del Monte,480,7
+899e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Blueberries,567,9
+8a9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Myers Planters Punch,1678,4
+8b9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Soup - French Can Pea,565,10
+8c9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Hickory Smoke& Liquid,2982,10
+8d9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Pineapple - Golden,1149,1
+8e9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Hoisin,531,9
+8f9e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Pork - Bacon Cooked Slcd,458,6
+909e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Cake Circle& Paprus,359,7
+919e09a0-39ef-ed11-9f03-f46b8c8f0ef6,Nantucket - Kiwi Berry Cktl.,1893,5
+ed5b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Muffin Carrot - Individual,2793,1
+ee5b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Bread - Calabrese Baguette,1676,4
+ef5b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Energy Drink - Franks Original,2129,10
+f05b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Wine - White& Riesling& Semi - Dry,284,6
+f15b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Juice - Orange 1.89l,3433,3
+f25b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Tray - 16in Rnd Blk,787,2
+f35b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Basil - Thai,3082,7
+f45b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Cleaner - Comet,1897,10
+f55b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Lobak,1549,7
+f65b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Pail With Metal Handle 16l White,3643,7
+f75b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Turnip - Wax,2394,1
+f85b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Coffee Swiss Choc Almond,441,2
+f95b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Cape Capensis - Fillet,2041,7
+fa5b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Soup - Boston Clam Chowder,2399,6
+fb5b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Wine - Pinot Noir Latour,640,7
+fc5b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Lemonade - Pineapple Passion,1085,3
+fd5b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Eggplant - Asian,2826,6
+fe5b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Container - Foam Dixie 12 Oz,2430,1
+ff5b20a6-39ef-ed11-9f03-f46b8c8f0ef6,Sauce - Black Current& Dry Mix,407,1
+005c20a6-39ef-ed11-9f03-f46b8c8f0ef6,Ham - Cooked Italian,3100,5
