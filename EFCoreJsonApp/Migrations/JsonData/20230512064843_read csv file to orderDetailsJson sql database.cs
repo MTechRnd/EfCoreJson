@@ -1,5 +1,4 @@
 ﻿using CsvHelper;
-using EFCoreJsonApp.Data;
 using EFCoreJsonApp.Models.CsvDataReadModels;
 using FastMember;
 using Microsoft.Data.SqlClient;
@@ -12,7 +11,7 @@ using System.Globalization;
 namespace EFCoreJsonApp.Migrations.JsonData
 {
     /// <inheritdoc />
-    public partial class insertcsvdatatosqldatabase : Migration
+    public partial class readcsvfiletoorderDetailsJsonsqldatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

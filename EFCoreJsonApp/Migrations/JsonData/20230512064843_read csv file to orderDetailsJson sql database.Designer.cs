@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFCoreJsonApp.Migrations.JsonData
 {
     [DbContext(typeof(JsonDataContext))]
-    [Migration("20230511094748_insert csv data to sql database")]
-    partial class insertcsvdatatosqldatabase
+    [Migration("20230512064843_read csv file to orderDetailsJson sql database")]
+    partial class readcsvfiletoorderDetailsJsonsqldatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,7 +27,7 @@ namespace EFCoreJsonApp.Migrations.JsonData
 
             modelBuilder.Entity("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderWithOrderDetailEntity", b =>
                 {
-                    b.Property<Guid?>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWSEQUENTIALID()");

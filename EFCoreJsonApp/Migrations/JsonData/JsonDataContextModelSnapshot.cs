@@ -24,7 +24,7 @@ namespace EFCoreJsonApp.Migrations.JsonData
 
             modelBuilder.Entity("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderWithOrderDetailEntity", b =>
                 {
-                    b.Property<Guid?>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWSEQUENTIALID()");
