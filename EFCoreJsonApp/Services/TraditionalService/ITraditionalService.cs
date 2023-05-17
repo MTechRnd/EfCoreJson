@@ -11,10 +11,11 @@ namespace EFCoreJsonApp.Services
     public interface ITraditionalService
     {
         Task<IList<OrderEntity>> GetAllData();
-        Task<OrderEntity> GetDataForSingleCustomer(int id);
-        Task<IList<OrderEntity>> GetDataForMultipleCustomer(int[] id);
-        Task<OrderDetailEntity> AggregateOperation();
-        Task<IList<OrderDetailEntity>> TotalOrdersOfCustomer(int id);
+        Task<OrderEntity> GetDataForSingleCustomer(Guid id);
+        Task<IList<OrderEntity>> GetDataForMultipleCustomer(List<Guid> id);
+        Task<decimal> AggregateOperation();
+        Task<int> TotalOrdersOfCustomer(Guid id);
+        Task<List<OrderCount>> TotalOrdersOfCustomers();
 
     }
 }

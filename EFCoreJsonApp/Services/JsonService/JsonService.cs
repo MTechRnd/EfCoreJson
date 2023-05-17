@@ -1,6 +1,9 @@
-﻿using EFCoreJsonApp.Data;
+﻿using Azure.Core;
+using EFCoreJsonApp.Data;
+using EFCoreJsonApp.Models.OrderDetails;
 using EFCoreJsonApp.Models.OrderWithOrderDetail;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace EFCoreJsonApp.Services.JsonService
 {
@@ -12,9 +15,12 @@ namespace EFCoreJsonApp.Services.JsonService
         {
             _context = context;
         }
-        public Task<OrderWithOrderDetailEntity> AggregateOperation()
+        public decimal AggregateOperation()
         {
-            throw new NotImplementedException();
+            var result = _context.OrderWithOrderDetails.AsEnumerable().Select(s => new { price = s.OrderDetailsJson.Sum(s => s.Price) });
+            var totalSum = result.Sum(r => r.price);
+
+            return (decimal)totalSum;
         }
 
         public async Task<IList<OrderWithOrderDetailEntity>> GetAllData()
@@ -23,19 +29,32 @@ namespace EFCoreJsonApp.Services.JsonService
             return result;
         }
 
-        public Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomer(int[] id)
+        public async Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomer(List<Guid> customerIds)
         {
-            throw new NotImplementedException();
+            var result = await _context.OrderWithOrderDetails.Where(od => customerIds.Contains(od.Id)).ToListAsync();
+            return result;
         }
 
-        public Task<OrderWithOrderDetailEntity> GetDataForSingleCustomer(int id)
+        public async Task<OrderWithOrderDetailEntity> GetDataForSingleCustomer(Guid id)
         {
-            throw new NotImplementedException();
+            var result = await _context.OrderWithOrderDetails.FirstOrDefaultAsync(od => od.Id == id);
+            return result;
         }
 
-        public Task<IList<OrderWithOrderDetailEntity>> TotalOrdersOfCustomer(int id)
+        public int TotalOrdersOfCustomer(Guid id)
         {
-            throw new NotImplementedException();
+            var result = _context.OrderWithOrderDetails.FirstOrDefault(od => od.Id == id);
+            if (result != null)
+                return result.OrderDetailsJson.Count();
+            return -1;
+        }
+
+        public async Task<IList<OrderCount>> TotalOrdersOfCustomers()
+        {
+            var result1 = _context.OrderWithOrderDetails
+                            .AsEnumerable()
+                            .Select(s => new OrderCount { Id = s.Id, totalOrder = s.OrderDetailsJson.Count() }).ToList();
+            return result1;
         }
     }
 }

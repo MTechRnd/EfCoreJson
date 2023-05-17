@@ -2,6 +2,7 @@
 using EFCoreJsonApp.Models.Order;
 using EFCoreJsonApp.Models.OrderDetails;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace EFCoreJsonApp.Services.TraditionalService
 {
@@ -13,31 +14,45 @@ namespace EFCoreJsonApp.Services.TraditionalService
         {
             _context = context;
         }
-        public Task<OrderDetailEntity> AggregateOperation()
+        public async Task<decimal> AggregateOperation()
         {
-
-            throw new NotImplementedException();
+            var avgOfPrice = await _context.OrderDetails.AverageAsync(od => od.Price);
+            var avgOfQuantity = await _context.OrderDetails.AverageAsync(od => od.Quantity);
+            return (decimal)avgOfPrice;
         }
 
         public async Task<IList<OrderEntity>> GetAllData()
         {
-            var data = await _context.Orders.ToListAsync();
-            return data;
+            var res = await _context.Orders.Include(o => o.OrderDetails).ToListAsync();
+            return res;
         }
 
-        public Task<IList<OrderEntity>> GetDataForMultipleCustomer(int[] id)
+        public async Task<IList<OrderEntity>> GetDataForMultipleCustomer(List<Guid> orderIds)
         {
-            throw new NotImplementedException();
+            var res = await _context.Orders.Where(o => orderIds.Contains(o.Id)).Include(o => o.OrderDetails).ToListAsync();
+            return res;
         }
 
-        public Task<OrderEntity> GetDataForSingleCustomer(int id)
+        public async Task<OrderEntity> GetDataForSingleCustomer(Guid id)
         {
-            throw new NotImplementedException();
+            var res = _context.Orders.FirstOrDefault(o => o.Id == id);
+            return res;
         }
 
-        public Task<IList<OrderDetailEntity>> TotalOrdersOfCustomer(int id)
+        public async Task<int> TotalOrdersOfCustomer(Guid id)
         {
-            throw new NotImplementedException();
+            var res = await _context.Orders.Where(o => o.Id == id).CountAsync();
+            return res;
+        }
+
+        public async Task<List<OrderCount>> TotalOrdersOfCustomers()
+        {
+            var res = await _context.OrderDetails.GroupBy(od => od.OrderId).Select(o => new OrderCount
+            {
+                Id = o.Key,
+                totalOrder = o.Count()
+            }).ToListAsync();
+            return res;
         }
     }
 }
