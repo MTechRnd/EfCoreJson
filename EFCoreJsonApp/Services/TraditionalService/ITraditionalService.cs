@@ -12,10 +12,12 @@ namespace EFCoreJsonApp.Services
     {
         Task<IList<OrderEntity>> GetAllData();
         Task<OrderEntity> GetDataForSingleCustomer(Guid id);
-        Task<IList<OrderEntity>> GetDataForMultipleCustomer(List<Guid> id);
-        Task<decimal> AggregateOperation();
+        Task<IList<OrderEntity>> GetDataForMultipleCustomer(IList<Guid> id);
+        Task<float> AverageOfPrice();
+        Task<double> AverageOfQuantity();
+        Task<int> SumOfAllQuantity();
+        Task<float> SumOfAllPrice();
         Task<int> TotalOrdersOfCustomer(Guid id);
-        Task<List<OrderCount>> TotalOrdersOfCustomers();
-
+        Task<IList<OrderCount>> TotalOrdersOfCustomers();
     }
 }

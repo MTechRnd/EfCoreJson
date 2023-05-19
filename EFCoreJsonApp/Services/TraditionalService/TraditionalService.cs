@@ -14,11 +14,28 @@ namespace EFCoreJsonApp.Services.TraditionalService
         {
             _context = context;
         }
-        public async Task<decimal> AggregateOperation()
+        public async Task<float> AverageOfPrice()
         {
             var avgOfPrice = await _context.OrderDetails.AverageAsync(od => od.Price);
+            return avgOfPrice;
+        }
+
+        public async Task<double> AverageOfQuantity()
+        {
             var avgOfQuantity = await _context.OrderDetails.AverageAsync(od => od.Quantity);
-            return (decimal)avgOfPrice;
+            return avgOfQuantity;
+        }
+
+        public async Task<int> SumOfAllQuantity()
+        {
+            var sumOfQuantity = await _context.OrderDetails.SumAsync(od => od.Quantity);
+            return sumOfQuantity;
+        }
+
+        public async Task<float> SumOfAllPrice()
+        {
+            var sumOfQuantity = await _context.OrderDetails.SumAsync(od => od.Price);
+            return sumOfQuantity;
         }
 
         public async Task<IList<OrderEntity>> GetAllData()
@@ -27,7 +44,7 @@ namespace EFCoreJsonApp.Services.TraditionalService
             return res;
         }
 
-        public async Task<IList<OrderEntity>> GetDataForMultipleCustomer(List<Guid> orderIds)
+        public async Task<IList<OrderEntity>> GetDataForMultipleCustomer(IList<Guid> orderIds)
         {
             var res = await _context.Orders.Where(o => orderIds.Contains(o.Id)).Include(o => o.OrderDetails).ToListAsync();
             return res;
@@ -41,16 +58,16 @@ namespace EFCoreJsonApp.Services.TraditionalService
 
         public async Task<int> TotalOrdersOfCustomer(Guid id)
         {
-            var res = await _context.Orders.Where(o => o.Id == id).CountAsync();
+            var res = await _context.OrderDetails.Where(o => o.OrderId == id).CountAsync();
             return res;
         }
 
-        public async Task<List<OrderCount>> TotalOrdersOfCustomers()
+        public async Task<IList<OrderCount>> TotalOrdersOfCustomers()
         {
             var res = await _context.OrderDetails.GroupBy(od => od.OrderId).Select(o => new OrderCount
             {
                 Id = o.Key,
-                totalOrder = o.Count()
+                TotalOrder = o.Count()
             }).ToListAsync();
             return res;
         }

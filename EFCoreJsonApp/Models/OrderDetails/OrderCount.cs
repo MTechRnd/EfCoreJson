@@ -9,6 +9,6 @@ namespace EFCoreJsonApp.Models.OrderDetails
     public class OrderCount
     {
         public Guid Id { get; set; }
-        public int totalOrder { get; set; }
+        public int TotalOrder { get; set; }
     }
 }
