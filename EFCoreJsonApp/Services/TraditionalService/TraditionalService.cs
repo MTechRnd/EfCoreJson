@@ -71,5 +71,35 @@ namespace EFCoreJsonApp.Services.TraditionalService
             }).ToListAsync();
             return res;
         }
+
+        public async Task<int> GetMaxQuantityByOrderId(Guid id)
+        {
+            var res = await  _context.OrderDetails.Where(od => od.OrderId == id).MaxAsync(od => od.Quantity);
+            return res;
+        }
+
+        public async Task<int> GetMinQuantityByOrderId(Guid id)
+        {
+            var res = await _context.OrderDetails.Where(od => od.OrderId == id).MinAsync(od => od.Quantity);
+            return res;
+        }
+
+        public async Task<float> GetTotalByOrderId(Guid id)
+        {
+            var res = await _context.OrderDetails.Where(od => od.OrderId == id).SumAsync(od => od.Total);
+            return res;
+        }
+
+        public async Task<float> GetMaxPriceByOrderId(Guid id)
+        {
+            var res = await _context.OrderDetails.Where(od => od.OrderId == id).MinAsync(od => od.Price);
+            return res;
+        }
+
+        public async Task<float> GetMinPriceByOrderId(Guid id)
+        {
+            var res = await _context.OrderDetails.Where(od => od.OrderId == id).MinAsync(od => od.Price);
+            return res;
+        }
     }
 }

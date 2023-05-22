@@ -1,4 +1,7 @@
-﻿using EFCoreJsonApp.Models.OrderDetails;
+﻿using BenchmarkDotNet.Order;
+using EFCoreJsonApp.Models.AggregateOperations;
+using EFCoreJsonApp.Models.CsvDataReadModels;
+using EFCoreJsonApp.Models.OrderDetails;
 using EFCoreJsonApp.Models.OrderWithOrderDetail;
 using System;
 using System.Collections.Generic;
@@ -13,11 +16,16 @@ namespace EFCoreJsonApp.Services.JsonService
         Task<IList<OrderWithOrderDetailEntity>> GetAllData();
         Task<OrderWithOrderDetailEntity> GetDataForSingleCustomer(Guid id);
         Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomer(IList<Guid> ids);
-        Task<decimal> AverageOfPrice();
-        Task<decimal> AverageOfQuantity();
-        Task<int> SumOfAllQuantity();
-        Task<decimal> SumOfAllPrice();
+        Task<AverageOfPriceResult> AverageOfPrice();
+        Task<AverageOfQuantityResult> AverageOfQuantity();
+        Task<TotalQuantityResult> SumOfAllQuantity();
+        Task<TotalPriceResult> SumOfAllPrice();
         Task<int> TotalOrdersOfCustomer(Guid id);
         Task<IList<OrderCount>> TotalOrdersOfCustomers();
+        Task<MaxQuantityResult> GetMaxQuantityByOrderId(Guid id);
+        Task<MinQuantityResult> GetMinQuantityByOrderId(Guid id);
+        Task<TotalByOrderResult> GetTotalByOrderId(Guid id);
+        Task<MaxPriceResult> GetMaxPriceByOrderId(Guid id);
+        Task<MinPriceResult> GetMinPriceByOrderId(Guid id);
     }
 }
