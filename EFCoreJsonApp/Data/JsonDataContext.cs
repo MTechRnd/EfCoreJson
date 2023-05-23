@@ -1,6 +1,6 @@
-﻿using EFCoreJsonApp.Models.AggregateOperations;
-using EFCoreJsonApp.Models.OrderDetails;
+﻿using EFCoreJsonApp.Models.OrderDetails;
 using EFCoreJsonApp.Models.OrderWithOrderDetail;
+using EFCoreJsonApp.Models.Records;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 

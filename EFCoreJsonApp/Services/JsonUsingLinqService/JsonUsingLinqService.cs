@@ -1,7 +1,6 @@
 ﻿using EFCoreJsonApp.Data;
 using EFCoreJsonApp.Models.OrderDetails;
 using EFCoreJsonApp.Models.OrderWithOrderDetail;
-using Microsoft.Diagnostics.Tracing.Parsers.MicrosoftWindowsTCPIP;
 using Microsoft.EntityFrameworkCore;
 
 namespace EFCoreJsonApp.Services.JsonUsingLinqService
@@ -15,7 +14,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             _context = context;
         }
 
-        public async Task<float> AverageOfPrice()
+        public async Task<float> AverageOfPriceAsync()
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable()
@@ -25,7 +24,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result;
         }
 
-        public async Task<double> AverageOfQuantity()
+        public async Task<double> AverageOfQuantityAsync()
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable()
@@ -35,7 +34,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result;
         }
 
-        public async Task<float> SumOfAllPrice()
+        public async Task<float> SumOfAllPriceAsync()
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable()
@@ -45,7 +44,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result;
         }
 
-        public async Task<int> SumOfAllQuantity()
+        public async Task<int> SumOfAllQuantityAsync()
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable()
@@ -55,13 +54,13 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
         }
 
 
-        public async Task<IList<OrderWithOrderDetailEntity>> GetAllData()
+        public async Task<IList<OrderWithOrderDetailEntity>> GetAllDataAsync()
         {
             var result = await _context.OrderWithOrderDetails.ToListAsync();
             return result;
         }
 
-        public async Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomer(IList<Guid> customerIds)
+        public async Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomerAsync(IList<Guid> customerIds)
         {
             var result = await _context.OrderWithOrderDetails
                 .Where(od => customerIds.Contains(od.Id))
@@ -69,14 +68,14 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result;
         }
 
-        public async Task<OrderWithOrderDetailEntity> GetDataForSingleCustomer(Guid id)
+        public async Task<OrderWithOrderDetailEntity> GetDataForSingleCustomerAsync(Guid id)
         {
             var result = await _context.OrderWithOrderDetails
                 .FirstOrDefaultAsync(od => od.Id == id);
             return result;
         }
 
-        public async Task<int> TotalOrdersOfCustomer(Guid id)
+        public async Task<int> TotalOrdersOfCustomerAsync(Guid id)
         {
             var result =  _context.OrderWithOrderDetails
                 .Where(od => od.Id == id)
@@ -86,7 +85,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result;
         }
 
-        public async Task<IList<OrderCount>> TotalOrdersOfCustomers()
+        public async Task<IList<OrderCount>> TotalOrdersOfCustomersAsync()
         {
             var result1 = _context.OrderWithOrderDetails
                             .AsEnumerable()
@@ -94,7 +93,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result1;
         }
 
-        public async Task<int> GetMaxQuantityByOrderId(Guid id)
+        public async Task<int> GetMaxQuantityByOrderIdAsync(Guid id)
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable().Where(od => od.Id == id)
@@ -103,7 +102,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result;
         }
 
-        public async Task<int> GetMinQuantityByOrderId(Guid id)
+        public async Task<int> GetMinQuantityByOrderIdAsync(Guid id)
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable().Where(od => od.Id == id)
@@ -112,7 +111,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result;
         }
 
-        public async Task<float> GetTotalByOrderId(Guid id)
+        public async Task<float> GetTotalByOrderIdAsync(Guid id)
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable().Where(od => od.Id == id)
@@ -121,7 +120,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result;
         }
 
-        public async Task<float> GetMaxPriceByOrderId(Guid id)
+        public async Task<float> GetMaxPriceByOrderIdAsync(Guid id)
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable().Where(od => od.Id == id)
@@ -130,7 +129,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
             return result;
         }
 
-        public async Task<float> GetMinPriceByOrderId(Guid id)
+        public async Task<float> GetMinPriceByOrderIdAsync(Guid id)
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable().Where(od => od.Id == id)

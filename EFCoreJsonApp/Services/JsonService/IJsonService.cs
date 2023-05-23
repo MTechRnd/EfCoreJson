@@ -1,8 +1,8 @@
 ﻿using BenchmarkDotNet.Order;
-using EFCoreJsonApp.Models.AggregateOperations;
 using EFCoreJsonApp.Models.CsvDataReadModels;
 using EFCoreJsonApp.Models.OrderDetails;
 using EFCoreJsonApp.Models.OrderWithOrderDetail;
+using EFCoreJsonApp.Models.Records;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,19 +13,19 @@ namespace EFCoreJsonApp.Services.JsonService
 {
     public interface IJsonService
     {
-        Task<IList<OrderWithOrderDetailEntity>> GetAllData();
-        Task<OrderWithOrderDetailEntity> GetDataForSingleCustomer(Guid id);
-        Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomer(IList<Guid> ids);
-        Task<AverageOfPriceResult> AverageOfPrice();
-        Task<AverageOfQuantityResult> AverageOfQuantity();
-        Task<TotalQuantityResult> SumOfAllQuantity();
-        Task<TotalPriceResult> SumOfAllPrice();
-        Task<TotalOrderByCustomerResult> TotalOrdersOfCustomer(Guid id);
-        Task<IList<OrderCount>> TotalOrdersOfCustomers();
-        Task<MaxQuantityResult> GetMaxQuantityByOrderId(Guid id);
-        Task<MinQuantityResult> GetMinQuantityByOrderId(Guid id);
-        Task<TotalByOrderResult> GetTotalByOrderId(Guid id);
-        Task<MaxPriceResult> GetMaxPriceByOrderId(Guid id);
-        Task<MinPriceResult> GetMinPriceByOrderId(Guid id);
+        Task<IList<OrderWithOrderDetailEntity>> GetAllDataAsync();
+        Task<OrderWithOrderDetailEntity> GetDataForSingleCustomerAsync(Guid id);
+        Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomerAsync(IList<Guid> ids);
+        Task<AverageOfPriceResult> AverageOfPriceAsync();
+        Task<AverageOfQuantityResult> AverageOfQuantityAsync();
+        Task<TotalQuantityResult> SumOfAllQuantityAsync();
+        Task<TotalPriceResult> SumOfAllPriceAsync();
+        Task<TotalOrderByCustomerResult> TotalOrdersOfCustomerAsync(Guid id);
+        Task<IList<OrderCount>> TotalOrdersOfCustomersAsync();
+        Task<MaxQuantityResult> GetMaxQuantityByOrderIdAsync(Guid id);
+        Task<MinQuantityResult> GetMinQuantityByOrderIdAsync(Guid id);
+        Task<TotalByOrderResult> GetTotalByOrderIdAsync(Guid id);
+        Task<MaxPriceResult> GetMaxPriceByOrderIdAsync(Guid id);
+        Task<MinPriceResult> GetMinPriceByOrderIdAsync(Guid id);
     }
 }
