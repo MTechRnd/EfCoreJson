@@ -31,6 +31,7 @@ namespace EFCoreJsonApp.Data
             modelBuilder.Entity<TotalByOrderResult>().ToTable("TotalByOrder", t => t.ExcludeFromMigrations()).HasNoKey();
             modelBuilder.Entity<MaxPriceResult>().ToTable("MaxPrice", t => t.ExcludeFromMigrations()).HasNoKey();
             modelBuilder.Entity<MinPriceResult>().ToTable("MinPrice", t => t.ExcludeFromMigrations()).HasNoKey();
+            modelBuilder.Entity<TotalOrderByCustomerResult>().ToTable("TotalOrderByCustomerResult", t => t.ExcludeFromMigrations()).HasNoKey();
             modelBuilder.Entity<OrderCount>().ToTable("OrderCount", t => t.ExcludeFromMigrations()).HasNoKey();
         }
     }

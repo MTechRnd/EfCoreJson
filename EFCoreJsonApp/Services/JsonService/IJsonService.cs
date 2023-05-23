@@ -20,7 +20,7 @@ namespace EFCoreJsonApp.Services.JsonService
         Task<AverageOfQuantityResult> AverageOfQuantity();
         Task<TotalQuantityResult> SumOfAllQuantity();
         Task<TotalPriceResult> SumOfAllPrice();
-        Task<int> TotalOrdersOfCustomer(Guid id);
+        Task<TotalOrderByCustomerResult> TotalOrdersOfCustomer(Guid id);
         Task<IList<OrderCount>> TotalOrdersOfCustomers();
         Task<MaxQuantityResult> GetMaxQuantityByOrderId(Guid id);
         Task<MinQuantityResult> GetMinQuantityByOrderId(Guid id);

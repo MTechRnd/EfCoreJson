@@ -174,20 +174,27 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<OrderWithOrderDetailEntity> GetDataForSingleCustomer(Guid id)
         {
             var query = @$"
-                    SELECT Id,CustomerName,OrderDate, JSON_QUERY(OrderDetailsJson) AS OrderDetailsJson 
+                    SELECT Id,CustomerName,OrderDate, OrderDetailsJson 
                     FROM OrderWithOrderDetails where Id = '{id}'";
            var result = await _context.OrderWithOrderDetails.FromSqlRaw(query).FirstOrDefaultAsync();
             return result;
         }
 
-        public async Task<int> TotalOrdersOfCustomer(Guid id)
+        public async Task<TotalOrderByCustomerResult> TotalOrdersOfCustomer(Guid id)
         {
-            var query = @$"SELECT * FROM OrderWithOrderDetails WHERE Id = '{id}'";
-            var result = await _context.OrderWithOrderDetails.FromSqlRaw(query).FirstOrDefaultAsync();
-            
-            if (result != null)
-                return result.OrderDetailsJson.Count();
-            return -1;
+            var query = @$"
+                    SELECT count(*) as TotalOrderByCustomerId
+                    FROM OrderWithOrderDetails
+                    CROSS APPLY OPENJSON(OrderDetailsJson) AS item
+                    where Id = '{id}'
+            ";
+            var totalOrderByCustomerId = await _context.Set<TotalOrderByCustomerResult>()
+                .FromSqlRaw(query)
+                .Select(x => x.TotalOrderByCustomerId)
+                .FirstOrDefaultAsync();
+
+            var result = new TotalOrderByCustomerResult { TotalOrderByCustomerId = totalOrderByCustomerId };
+            return result;
         }
 
         public async Task<IList<OrderCount>> TotalOrdersOfCustomers()

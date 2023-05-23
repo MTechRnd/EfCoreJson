@@ -16,25 +16,38 @@ namespace EFCoreJsonApp.Services.TraditionalService
         }
         public async Task<float> AverageOfPrice()
         {
-            var avgOfPrice = await _context.OrderDetails.AverageAsync(od => od.Price);
+            var avgOfPrice = await _context.OrderDetails
+                .AverageAsync(od => od.Price);
+            var res = await _context.Orders
+                .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { id = o.Id, price = od.Price })
+                .AverageAsync(p => p.price);
             return avgOfPrice;
         }
 
         public async Task<double> AverageOfQuantity()
         {
             var avgOfQuantity = await _context.OrderDetails.AverageAsync(od => od.Quantity);
+            var res = await _context.Orders
+                .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { id = o.Id, quantity = od.Quantity })
+                .AverageAsync(p => p.quantity);
             return avgOfQuantity;
         }
 
         public async Task<int> SumOfAllQuantity()
         {
             var sumOfQuantity = await _context.OrderDetails.SumAsync(od => od.Quantity);
+            var res = await _context.Orders
+                .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { id = o.Id, quantity = od.Quantity })
+                .SumAsync(p => p.quantity);
             return sumOfQuantity;
         }
 
         public async Task<float> SumOfAllPrice()
         {
             var sumOfQuantity = await _context.OrderDetails.SumAsync(od => od.Price);
+            var res = await _context.Orders
+                .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { id = o.Id, price = od.Price })
+                .SumAsync(p => p.price);
             return sumOfQuantity;
         }
 
@@ -52,53 +65,74 @@ namespace EFCoreJsonApp.Services.TraditionalService
 
         public async Task<OrderEntity> GetDataForSingleCustomer(Guid id)
         {
-            var res = _context.Orders.FirstOrDefault(o => o.Id == id);
+            var res = await _context.Orders.Where(o => o.Id == id).Include(od => od.OrderDetails).FirstOrDefaultAsync();
             return res;
         }
 
         public async Task<int> TotalOrdersOfCustomer(Guid id)
         {
-            var res = await _context.OrderDetails.Where(o => o.OrderId == id).CountAsync();
+            var res = await _context.Orders
+                .Where(o => o.Id == id)
+                .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new {id = o.Id})
+                .CountAsync();
             return res;
         }
 
         public async Task<IList<OrderCount>> TotalOrdersOfCustomers()
         {
-            var res = await _context.OrderDetails.GroupBy(od => od.OrderId).Select(o => new OrderCount
-            {
-                Id = o.Key,
-                TotalOrder = o.Count()
-            }).ToListAsync();
+            var res = await _context.Orders
+                    .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { id = od.OrderId })
+                    .GroupBy(orderId => orderId.id)
+                    .Select(o => new OrderCount
+                    {
+                        Id = o.Key,
+                        TotalOrder = o.Count()
+                    }).ToListAsync();
             return res;
         }
 
         public async Task<int> GetMaxQuantityByOrderId(Guid id)
         {
-            var res = await  _context.OrderDetails.Where(od => od.OrderId == id).MaxAsync(od => od.Quantity);
+            var res = await _context.Orders
+                        .Where(o => o.Id == id)
+                        .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { quantity = od.Quantity})
+                        .MaxAsync(q => q.quantity);
             return res;
         }
 
         public async Task<int> GetMinQuantityByOrderId(Guid id)
         {
-            var res = await _context.OrderDetails.Where(od => od.OrderId == id).MinAsync(od => od.Quantity);
+            var res = await _context.Orders
+                        .Where(o => o.Id == id)
+                        .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { quantity = od.Quantity })
+                        .MinAsync(q => q.quantity);
             return res;
         }
 
         public async Task<float> GetTotalByOrderId(Guid id)
         {
-            var res = await _context.OrderDetails.Where(od => od.OrderId == id).SumAsync(od => od.Total);
+            var res = await _context.Orders
+                        .Where(od => od.Id == id)
+                        .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { total = od.Total })
+                        .SumAsync(od => od.total);
             return res;
         }
 
         public async Task<float> GetMaxPriceByOrderId(Guid id)
         {
-            var res = await _context.OrderDetails.Where(od => od.OrderId == id).MinAsync(od => od.Price);
+            var res = await _context.Orders
+                         .Where(o => o.Id == id)
+                         .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { price = od.Price })
+                         .MaxAsync(q => q.price);
             return res;
         }
 
         public async Task<float> GetMinPriceByOrderId(Guid id)
         {
-            var res = await _context.OrderDetails.Where(od => od.OrderId == id).MinAsync(od => od.Price);
+            var res = await _context.Orders
+                         .Where(o => o.Id == id)
+                         .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { price = od.Price })
+                         .MinAsync(q => q.price);
             return res;
         }
     }

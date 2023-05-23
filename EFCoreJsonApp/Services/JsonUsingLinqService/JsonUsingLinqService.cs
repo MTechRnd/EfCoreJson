@@ -78,11 +78,12 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
 
         public async Task<int> TotalOrdersOfCustomer(Guid id)
         {
-            var result = _context.OrderWithOrderDetails
-                .FirstOrDefault(od => od.Id == id);
-            if (result != null)
-                return result.OrderDetailsJson.Count();
-            return -1;
+            var result =  _context.OrderWithOrderDetails
+                .Where(od => od.Id == id)
+                .AsEnumerable()
+                .Select(od => od.OrderDetailsJson.Count())
+                .FirstOrDefault();
+            return result;
         }
 
         public async Task<IList<OrderCount>> TotalOrdersOfCustomers()
