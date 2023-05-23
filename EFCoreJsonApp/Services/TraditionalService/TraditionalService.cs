@@ -16,39 +16,34 @@ namespace EFCoreJsonApp.Services.TraditionalService
         }
         public async Task<float> AverageOfPrice()
         {
-            var avgOfPrice = await _context.OrderDetails
-                .AverageAsync(od => od.Price);
             var res = await _context.Orders
                 .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { id = o.Id, price = od.Price })
                 .AverageAsync(p => p.price);
-            return avgOfPrice;
+            return res;
         }
 
         public async Task<double> AverageOfQuantity()
         {
-            var avgOfQuantity = await _context.OrderDetails.AverageAsync(od => od.Quantity);
             var res = await _context.Orders
                 .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { id = o.Id, quantity = od.Quantity })
                 .AverageAsync(p => p.quantity);
-            return avgOfQuantity;
+            return res;
         }
 
         public async Task<int> SumOfAllQuantity()
         {
-            var sumOfQuantity = await _context.OrderDetails.SumAsync(od => od.Quantity);
             var res = await _context.Orders
                 .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { id = o.Id, quantity = od.Quantity })
                 .SumAsync(p => p.quantity);
-            return sumOfQuantity;
+            return res;
         }
 
         public async Task<float> SumOfAllPrice()
         {
-            var sumOfQuantity = await _context.OrderDetails.SumAsync(od => od.Price);
             var res = await _context.Orders
                 .Join(_context.OrderDetails, o => o.Id, od => od.OrderId, (o, od) => new { id = o.Id, price = od.Price })
                 .SumAsync(p => p.price);
-            return sumOfQuantity;
+            return res;
         }
 
         public async Task<IList<OrderEntity>> GetAllData()
