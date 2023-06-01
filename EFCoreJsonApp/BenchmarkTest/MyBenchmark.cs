@@ -10,10 +10,6 @@ using EFCoreJsonApp.Services;
 using EFCoreJsonApp.Services.JsonService;
 using EFCoreJsonApp.Services.JsonUsingLinqService;
 using EFCoreJsonApp.Services.TraditionalService;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System;
-using System.Diagnostics;
 
 namespace EFCoreJsonApp.BenchmarkTest
 {
@@ -59,7 +55,7 @@ namespace EFCoreJsonApp.BenchmarkTest
                 new Guid("708b27d2-19fa-ed11-9f08-f46b8c8f0ef6")
             };
             _guidTraditional = new Guid("15fa1215-41f5-ed11-9f05-f46b8c8f0ef6");
-            _guidJson = new Guid("147527d2-19fa-ed11-9f08-f46b8c8f0ef6");
+            _guidJson = new Guid("1a7527d2-19fa-ed11-9f08-f46b8c8f0ef6");
 
             Prices = new List<float>
             {
@@ -113,7 +109,6 @@ namespace EFCoreJsonApp.BenchmarkTest
             }
         }
 
-
         [Benchmark(Baseline = true)]
         public async Task TraditionalBenchmark()
         {
@@ -123,7 +118,7 @@ namespace EFCoreJsonApp.BenchmarkTest
             //var res4 = await _traditionalService.TotalOrdersOfCustomerAsync(_guidTraditional);
             //var res5 = await _traditionalService.TotalOrdersOfCustomersAsync();
             //var res6 = await _traditionalService.AverageOfPriceAsync();
-            var res7 = await _traditionalService.AverageOfQuantityAsync();
+            //var res7 = await _traditionalService.AverageOfQuantityAsync();
             //var res8 = await _traditionalService.SumOfAllPriceAsync();
             //var res9 = await _traditionalService.SumOfAllQuantityAsync();
             //var res10 = await _traditionalService.GetMaxQuantityByOrderIdAsync(_guidTraditional);
@@ -149,20 +144,26 @@ namespace EFCoreJsonApp.BenchmarkTest
             //            ItemName = "Sho Piece of Camle",
             //            Price = 250.00f,
             //            Quantity = 3
+            //        },
+            //        new OrderDetailEntity()
+            //        {
+            //            ItemName = "Show Piece",
+            //            Price = 250.00f,
+            //            Quantity = 3
             //        }
             //    }
             //};
             //await _traditionalService.InsertOrderDetailsAsync(order);
 
-            //int randomIndex1 = RandomIndex.Next(0, Prices.Count);
-            //int randomIndex2 = RandomIndex.Next(0, Prices.Count);
-            //int randomIndex3 = RandomIndex.Next(0, CustomerNames.Count);
+            //int PriceRandomizer = RandomIndex.Next(0, Prices.Count);
+            //int QuantityRandomizer = RandomIndex.Next(0, Prices.Count);
+            //int NameRandomizer = RandomIndex.Next(0, CustomerNames.Count);
             //List<OrderDetailUpdateDto> OrderDetailsDto = new List<OrderDetailUpdateDto>
-            //    {
-            //        new OrderDetailUpdateDto(new Guid("e7ba8d99-9aff-ed11-9f09-f46b8c8f0ef6"),Prices[randomIndex1],Quantities[randomIndex1]),
-            //        new OrderDetailUpdateDto(new Guid("e4ba8d99-9aff-ed11-9f09-f46b8c8f0ef6"),Prices[randomIndex2],Quantities[randomIndex2])
-            //    };
-            //var updateOrderDetailsTraditional = new OrderUpdateDto(new Guid("dfba8d99-9aff-ed11-9f09-f46b8c8f0ef6"), CustomerNames[randomIndex3], OrderDetailsDto) ;
+            //{
+            //    new OrderDetailUpdateDto(new Guid("e7ba8d99-9aff-ed11-9f09-f46b8c8f0ef6"),Prices[PriceRandomizer],Quantities[QuantityRandomizer]),
+            //    new OrderDetailUpdateDto(new Guid("e4ba8d99-9aff-ed11-9f09-f46b8c8f0ef6"),Prices[PriceRandomizer],Quantities[QuantityRandomizer])
+            //};
+            //var updateOrderDetailsTraditional = new OrderUpdateDto(new Guid("dfba8d99-9aff-ed11-9f09-f46b8c8f0ef6"), CustomerNames[NameRandomizer], OrderDetailsDto);
             //await _traditionalService.UpdateOrderDetailsAsync(updateOrderDetailsTraditional);
         }
 
@@ -205,43 +206,50 @@ namespace EFCoreJsonApp.BenchmarkTest
             //            Quantity = 3,
             //            Total = 750.00f
             //        },
+            //        new OrderDetailsJson()
+            //        {
+            //            ItemName = "Show Piece",
+            //            Price = 250.00f,
+            //            Quantity = 3,
+            //            Total = 750.00f
+            //        }
             //    }
             //};
 
             //await _jsonUsingLinqService.InsertOrderDetailsAsync(orderWithOrderDetails);
 
-            //int randomIndex1 = RandomIndex.Next(0, Prices.Count);
-            //int randomIndex2 = RandomIndex.Next(0, Prices.Count);
-            //int randomIndex3 = RandomIndex.Next(0, CustomerNames.Count);
+            //int PriceRandomizer = RandomIndex.Next(0, Prices.Count);
+            //int QuantityRandomizer = RandomIndex.Next(0, Prices.Count);
+            //int NameRandomizer = RandomIndex.Next(0, CustomerNames.Count);
             //var OrderDetailsJson = new List<OrderDetailsJsonDto>()
             //{
-            //    new OrderDetailsJsonDto(4, Prices[randomIndex1],Quantities[randomIndex1]),
-            //    new OrderDetailsJsonDto(7, Prices[randomIndex2],Quantities[randomIndex2])
+            //    new OrderDetailsJsonDto(4, Prices[PriceRandomizer],Quantities[QuantityRandomizer]),
+            //    new OrderDetailsJsonDto(7, Prices[PriceRandomizer],Quantities[QuantityRandomizer])
             //};
 
-            //var updateDetailJson = new OrderWithOrderDetailJsonUpdateDto(new Guid("367c7749-9bff-ed11-9f09-f46b8c8f0ef6"), CustomerNames[randomIndex3], OrderDetailsJson);
+            //var updateDetailJson = new OrderWithOrderDetailJsonUpdateDto(new Guid("367c7749-9bff-ed11-9f09-f46b8c8f0ef6"), CustomerNames[NameRandomizer], OrderDetailsJson);
             //await _jsonUsingLinqService.UpdateOrderDetailsAsync(updateDetailJson);
 
         }
 
-        [Benchmark]
-        public async Task JsonRawQueryBenchmark()
-        {
-            //var resJson1 = await _jsonService.GetAllDataAsync();
-            //var resJson2 = await _jsonService.GetDataForSingleCustomerAsync(_guidJson);
-            //var resJson3 = await _jsonService.GetDataForMultipleCustomerAsync(_guidsOfJson);
-            //var resJson4 = await _jsonService.TotalOrdersOfCustomerAsync(_guidJson);
-            //var resJson5 = await _jsonService.TotalOrdersOfCustomersAsync();
-            //var resJson6 = await _jsonService.AverageOfPriceAsync();
-            var resJson7 = await _jsonService.AverageOfQuantityAsync();
-            //var resJson8 = await _jsonService.SumOfAllPriceAsync();
-            //var resJson9 = await _jsonService.SumOfAllQuantityAsync();
-            //var resJson10 = await _jsonService.GetMaxQuantityByOrderIdAsync(_guidJson);
-            //var resJson11 = await _jsonService.GetMinQuantityByOrderIdAsync(_guidJson);
-            //var resJson12 = await _jsonService.GetTotalByOrderIdAsync(_guidJson);
-            //var resJson13 = await _jsonService.GetMaxPriceByOrderIdAsync(_guidJson);
-            //var resJson14 = await _jsonService.GetMinPriceByOrderIdAsync(_guidJson);
-        }
+        //[Benchmark]
+        //public async Task JsonRawQueryBenchmark()
+        //{
+        //    //var resJson1 = await _jsonService.GetAllDataAsync();
+        //    //var resJson2 = await _jsonService.GetDataForSingleCustomerAsync(_guidJson);
+        //    //var resJson3 = await _jsonService.GetDataForMultipleCustomerAsync(_guidsOfJson);
+        //    //var resJson4 = await _jsonService.TotalOrdersOfCustomerAsync(_guidJson);
+        //    //var resJson5 = await _jsonService.TotalOrdersOfCustomersAsync();
+        //    //var resJson6 = await _jsonService.AverageOfPriceAsync();
+        //    //var resJson7 = await _jsonService.AverageOfQuantityAsync();
+        //    //var resJson8 = await _jsonService.SumOfAllPriceAsync();
+        //    //var resJson9 = await _jsonService.SumOfAllQuantityAsync();
+        //    var resJson10 = await _jsonService.GetMaxQuantityByOrderIdAsync(_guidJson);
+        //    //var resJson11 = await _jsonService.GetMinQuantityByOrderIdAsync(_guidJson);
+        //    //var resJson12 = await _jsonService.GetTotalByOrderIdAsync(_guidJson);
+        //    //var resJson13 = await _jsonService.GetMaxPriceByOrderIdAsync(_guidJson);
+        //    //var resJson14 = await _jsonService.GetMinPriceByOrderIdAsync(_guidJson);
+        //}
 
     }
 }

@@ -33,21 +33,7 @@ namespace EFCoreJsonApp
         private static async Task Main(string[] args)
         {
 
-            var summary = BenchmarkRunner.Run<MyBenchmark>();
-
-            //string projectRoot = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            //string filePath = Path.Combine(projectRoot, "output.txt");
-            //using (var writer = new StreamWriter(filePath))
-            //{
-            //    foreach (var report in summary.Reports)
-            //    {
-            //        writer.WriteLine($"Method: {report.BenchmarkCase.DisplayInfo}");
-            //        writer.WriteLine($"Mean: {report.ResultStatistics.Mean} ");
-            //        writer.WriteLine($"StdDev: {report.ResultStatistics.StandardDeviation} ");
-            //        writer.WriteLine();
-            //    }
-            //    writer.Flush();
-            //}
+            var summary = BenchmarkRunner.Run<MyBenchmark>(new BenchmarkConfig());
 
             var hostBuilder = Host.CreateDefaultBuilder(args)
             .ConfigureServices((hostContext, services) =>
@@ -78,7 +64,7 @@ namespace EFCoreJsonApp
             //var res3 = await traditionalService.GetDataForMultipleCustomerAsync(customerIds);
             //var res4 = await traditionalService.TotalOrdersOfCustomerAsync(id);
             //var res5 = await traditionalService.TotalOrdersOfCustomersAsync();
-            //var res6 = await traditionalService.AverageOfPriceAsync();
+            var res6 = await traditionalService.AverageOfPriceAsync();
             //var res7 = await traditionalService.AverageOfQuantityAsync();
             //var res8 = await traditionalService.SumOfAllPriceAsync();
             //var res9 = await traditionalService.SumOfAllQuantityAsync();
@@ -167,7 +153,7 @@ namespace EFCoreJsonApp
             //var resJsonLinq3 = await jsonLinqService.GetDataForMultipleCustomerAsync(customerIdsJson);
             //var resJsonLinq4 = await jsonLinqService.TotalOrdersOfCustomerAsync(idJson);
             //var resJsonLinq5 = await jsonLinqService.TotalOrdersOfCustomersAsync();
-            //var resJsonLinq6 = await jsonLinqService.AverageOfPriceAsync();
+            var resJsonLinq6 = await jsonLinqService.AverageOfPriceAsync();
             //var resJsonLinq7 = await jsonLinqService.AverageOfQuantityAsync();
             //var resJsonLinq8 = await jsonLinqService.SumOfAllPriceAsync();
             //var resJsonLinq9 = await jsonLinqService.SumOfAllQuantityAsync();
@@ -249,7 +235,7 @@ namespace EFCoreJsonApp
                     new OrderDetailsJsonDto(1, 400, 2)
                 };
 
-            //var updateDetailJson = new OrderWithOrderDetailJsonUpdateDto(new Guid("a3cade7c-71ff-ed11-9f09-f46b8c8f0ef6"), "smitesh maniya", OrderDetailsJson);
+            var updateDetailJson = new OrderWithOrderDetailJsonUpdateDto(new Guid("a3cade7c-71ff-ed11-9f09-f46b8c8f0ef6"), "smitesh maniya", OrderDetailsJson);
             //var resJsonLinq15 = await jsonLinqService.UpdateOrderDetailsAsync(updateDetailJson);
             //Console.WriteLine("res of updated linq" + resJsonLinq15);
 
@@ -258,20 +244,20 @@ namespace EFCoreJsonApp
 
 
             //Console.WriteLine("Json Raw Query:");
-            //var jsonService = serviceProvider.GetService<IJsonService>();
-            //var idJson = new Guid("7a7827d2-19fa-ed11-9f08-f46b8c8f0ef6");
-            //var customerIdsJson = new List<Guid>
-            //{
-            //    new Guid("7a7827d2-19fa-ed11-9f08-f46b8c8f0ef6"),
-            //    new Guid("977827d2-19fa-ed11-9f08-f46b8c8f0ef6"),
-            //    new Guid("708b27d2-19fa-ed11-9f08-f46b8c8f0ef6")
-            //};
+            var jsonService = serviceProvider.GetService<IJsonService>();
+            var idJson = new Guid("7a7827d2-19fa-ed11-9f08-f46b8c8f0ef6");
+            var customerIdsJson = new List<Guid>
+            {
+                new Guid("7a7827d2-19fa-ed11-9f08-f46b8c8f0ef6"),
+                new Guid("977827d2-19fa-ed11-9f08-f46b8c8f0ef6"),
+                new Guid("708b27d2-19fa-ed11-9f08-f46b8c8f0ef6")
+            };
             //var resJson1 = await jsonService.GetAllDataAsync();
             //var resJson2 = await jsonService.GetDataForSingleCustomerAsync(idJson);
             //var resJson3 = await jsonService.GetDataForMultipleCustomerAsync(customerIdsJson);
             //var resJson4 = await jsonService.TotalOrdersOfCustomerAsync(idJson);
             //var resJson5 = await jsonService.TotalOrdersOfCustomersAsync();
-            //var resJson6 = await jsonService.AverageOfPriceAsync();
+            var resJson6 = await jsonService.AverageOfPriceAsync();
             //var resJson7 = await jsonService.AverageOfQuantityAsync();
             //var resJson8 = await jsonService.SumOfAllPriceAsync();
             //var resJson9 = await jsonService.SumOfAllQuantityAsync();

@@ -3,8 +3,6 @@ using EFCoreJsonApp.Models.OrderDetails;
 using EFCoreJsonApp.Models.OrderWithOrderDetail;
 using EFCoreJsonApp.Models.OrderWithOrderDetailJson;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
-using System.Diagnostics;
 
 namespace EFCoreJsonApp.Services.JsonUsingLinqService
 {
@@ -57,7 +55,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable()
-                .Select(s => new { price = s.OrderDetailsJson.Sum(s => s.Price) })
+                .Select(s => new { price = s.OrderDetailsJson.Average(s => s.Price) })
                 .Average(r => r.price);
             return result;
         }
@@ -66,7 +64,7 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
         {
             var result = _context.OrderWithOrderDetails
                 .AsEnumerable()
-                .Select(s => new { quantity = s.OrderDetailsJson.Sum(s => s.Quantity) })
+                .Select(s => new { quantity = s.OrderDetailsJson.Average(s => s.Quantity) })
                 .Average(r => r.quantity);
             return result;
         }
