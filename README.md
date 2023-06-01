@@ -69,11 +69,11 @@ Following are basic command which i have used:
 - Performance Improving of JsonLinq query is 19.85%
 
 ### Inserting Data:
-|               Method |     Mean |    Error |   StdDev | Ratio | RatioSD |      Gen0 |     Gen1 | Allocated | Alloc Ratio |
-|--------------------- |---------:|---------:|---------:|------:|--------:|----------:|---------:|----------:|------------:|
-| TraditionalBenchmark | 17.43 ms | 14.51 ms | 3.769 ms |  1.00 |    0.00 | 1656.2500 | 203.1250 |  14.92 MB |        1.00 |
-|    JsonLinqBenchmark | 20.16 ms | 12.42 ms | 3.227 ms |  1.17 |    0.08 | 2347.6563 |  97.6563 |  21.07 MB |        1.41 |
-- Performance Improving of Traditional query is 14.52%
+|               Method |     Mean |     Error |   StdDev | Ratio | RatioSD |      Gen0 |     Gen1 | Allocated | Alloc Ratio |
+|--------------------- |---------:|----------:|---------:|------:|--------:|----------:|---------:|----------:|------------:|
+|    JsonLinqBenchmark | 16.22 ms |  9.500 ms | 2.467 ms |  0.57 |    0.02 | 1937.5000 | 328.1250 |  17.42 MB |        0.68 |
+| TraditionalBenchmark | 28.63 ms | 17.297 ms | 4.492 ms |  1.00 |    0.00 | 2835.9375 |  54.6875 |  25.46 MB |        1.00 |
+- Performance Improving of JsonLinq query is 55.34%
 
 ### Updating Data:
 |               Method |     Mean |    Error |   StdDev | Ratio | RatioSD |   Gen0 | Allocated | Alloc Ratio |
