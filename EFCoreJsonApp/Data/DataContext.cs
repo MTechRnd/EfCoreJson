@@ -1,4 +1,5 @@
-﻿using EFCoreJsonApp.Models.Order;
+﻿using EFCoreJsonApp.Comman;
+using EFCoreJsonApp.Models.Order;
 using EFCoreJsonApp.Models.OrderDetails;
 using EFCoreJsonApp.Models.Orders;
 using Microsoft.EntityFrameworkCore;
@@ -17,13 +18,39 @@ namespace EFCoreJsonApp.Data
                 .AddUserSecrets<DataContext>()
                 .Build();
             optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"))
-                .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
+                .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Warning);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new OrderEntityConfiguration());
             modelBuilder.ApplyConfiguration(new OrderDetailEntityConfiguration());
+        }
+
+        public override int SaveChanges()
+        {
+            UpdateTimestamps();
+            return base.SaveChanges();
+        }
+
+        public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
+        {
+            UpdateTimestamps();
+            return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
+        }
+
+        private void UpdateTimestamps()
+        {
+            var entities = ChangeTracker.Entries()
+                .Where(e => e.Entity is BaseEntity && (e.State == EntityState.Modified || e.State == EntityState.Added));
+            foreach (var entity in entities)
+            {
+                if(entity.State == EntityState.Added)
+                {
+                    ((BaseEntity)entity.Entity).CreatedAt = DateTime.UtcNow;
+                }
+                ((BaseEntity)entity.Entity).UpdatedAt = DateTime.UtcNow;
+            }
         }
 
     }

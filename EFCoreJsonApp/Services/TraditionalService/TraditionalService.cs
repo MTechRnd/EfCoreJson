@@ -1,7 +1,10 @@
 ﻿using EFCoreJsonApp.Data;
 using EFCoreJsonApp.Models.Order;
 using EFCoreJsonApp.Models.OrderDetails;
+using EFCoreJsonApp.Models.Orders;
+using Microsoft.Diagnostics.Tracing.Parsers.MicrosoftWindowsTCPIP;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 
@@ -15,6 +18,45 @@ namespace EFCoreJsonApp.Services.TraditionalService
         {
             _context = context;
         }
+
+        public async Task InsertOrderDetailsAsync(OrderEntity order)
+        {
+            _context.Orders.Add(order);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<bool> UpdateOrderDetailsAsync(OrderUpdateDto orderDetailsDto)
+        {
+            var res = await _context.Orders.Where(o => o.Id == orderDetailsDto.Id).Include(o => o.OrderDetails).FirstOrDefaultAsync();
+            
+            if(res == null)
+                return false;
+            res.CustomerName = orderDetailsDto.CustomerName;
+            foreach(var order in orderDetailsDto.OrderDetails)
+            {
+                var orderDetails = res.OrderDetails.FirstOrDefault(o => o.Id == order.Id);
+                if(orderDetails != null)
+                {
+                    orderDetails.Price = order.Price;
+                    orderDetails.Quantity = order.Quantity;
+                }
+            }
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> DeleteOrdersWithOrderIdAsync(Guid orderId)
+        {
+            var findOrderById = await _context.Orders.FindAsync(orderId);
+            if(findOrderById != null)
+            {
+                _context.Orders.Remove(findOrderById);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
+
         public async Task<float> AverageOfPriceAsync()
         {
             var res = await _context.Orders

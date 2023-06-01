@@ -19,6 +19,12 @@ namespace EFCoreJsonApp.Models.OrderWithOrderDetail
                 .HasColumnType("date");
 
             modelBuilder.OwnsMany(x => x.OrderDetailsJson, builder => { builder.ToJson(); });
+
+            modelBuilder.Property(p => p.Timestamp).IsRowVersion();
+
+            modelBuilder.Property(p => p.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
+
+            modelBuilder.Property(p => p.UpdatedAt).HasDefaultValueSql("GETUTCDATE()");
         }
     }
 }
