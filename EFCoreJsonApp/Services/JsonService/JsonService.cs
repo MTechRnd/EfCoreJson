@@ -18,9 +18,10 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<AverageOfPriceResult> AverageOfPriceAsync()
         {
             var query = @"
-                    SELECT AVG(CAST(JSON_VALUE(item.Value, '$.Price') AS decimal(10,2))) AS AverageOfPrice
+                    SELECT AVG(item.Price) AS AverageOfPrice
                     FROM OrderWithOrderDetails
-                    CROSS APPLY OPENJSON(OrderDetailsJson) AS item";
+                    CROSS APPLY OPENJSON(OrderDetailsJson)
+                    WITH (Price decimal(10,2) '$.Price') AS item";
             var result = await _context.Set<AverageOfPriceResult>()
                 .FromSqlRaw(query)
                 .ToListAsync();
@@ -29,10 +30,11 @@ namespace EFCoreJsonApp.Services.JsonService
 
         public async Task<AverageOfQuantityResult> AverageOfQuantityAsync()
         {
-            var query = @"
-                    SELECT AVG(CAST(JSON_VALUE(item.Value, '$.Quantity') AS decimal(10,2))) AS AverageOfQuantity
+            var query = @"                    
+                    SELECT AVG(item.Quantity) AS AverageOfQuantity
                     FROM OrderWithOrderDetails
-                    CROSS APPLY OPENJSON(OrderDetailsJson) AS item";
+                    CROSS APPLY OPENJSON(OrderDetailsJson)
+                    WITH (Quantity decimal(10,2) '$.Quantity') AS item";
             var result = await _context.Set<AverageOfQuantityResult>()
                 .FromSqlRaw(query)
                 .ToListAsync();
@@ -42,9 +44,10 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<TotalPriceResult> SumOfAllPriceAsync()
         {
             var query = @"
-                    SELECT SUM(CAST(JSON_VALUE(item.Value, '$.Price') AS decimal(10,2))) AS TotalPrice
+                    SELECT SUM(item.Price) AS TotalPrice
                     FROM OrderWithOrderDetails
-                    CROSS APPLY OPENJSON(OrderDetailsJson) AS item";
+                    CROSS APPLY OPENJSON(OrderDetailsJson)
+                    WITH (Price decimal(10,2) '$.Price') AS item";
             var result = await _context.Set<TotalPriceResult>()
                 .FromSqlRaw(query)
                 .ToListAsync();
@@ -54,9 +57,10 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<TotalQuantityResult> SumOfAllQuantityAsync()
         {
             var query = @"
-                    SELECT SUM(CAST(JSON_VALUE(item.Value, '$.Quantity') AS int)) AS TotalQuantity
+                    SELECT SUM(item.Quantity) AS TotalQuantity
                     FROM OrderWithOrderDetails
-                    CROSS APPLY OPENJSON(OrderDetailsJson) AS item";
+                    CROSS APPLY OPENJSON(OrderDetailsJson)
+                    WITH (Quantity int '$.Quantity') AS item";
             var result = await _context.Set<TotalQuantityResult>()
                 .FromSqlRaw(query)
                 .ToListAsync();
@@ -66,9 +70,10 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<MaxQuantityResult> GetMaxQuantityByOrderIdAsync(Guid id)
         {
             var query = @$"
-                    SELECT MAX(CAST(JSON_VALUE(item.Value, '$.Quantity') AS int)) AS MaximumQuantity
+                    SELECT MAX(item.Quantity) AS MaximumQuantity
                     FROM OrderWithOrderDetails
-                    CROSS APPLY OPENJSON(OrderDetailsJson) AS item
+                    CROSS APPLY OPENJSON(OrderDetailsJson)
+                    WITH (Quantity int '$.Quantity') AS item
                     WHERE Id = '{id}'
                 ";
             var result = await _context.Set<MaxQuantityResult>()
@@ -80,9 +85,10 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<MinQuantityResult> GetMinQuantityByOrderIdAsync(Guid id)
         {
             var query = @$"
-                    SELECT MIN(CAST(JSON_VALUE(item.Value, '$.Quantity') AS int)) AS MinimumQuantity
+                    SELECT MIN(item.Quantity) AS MaximumQuantity
                     FROM OrderWithOrderDetails
-                    CROSS APPLY OPENJSON(OrderDetailsJson) AS item
+                    CROSS APPLY OPENJSON(OrderDetailsJson)
+                    WITH (Quantity int '$.Quantity') AS item
                     WHERE Id = '{id}'
                 ";
             var result = await _context.Set<MinQuantityResult>()
@@ -94,9 +100,10 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<TotalByOrderResult> GetTotalByOrderIdAsync(Guid id)
         {
             var query = @$"
-                    SELECT SUM(CAST(JSON_VALUE(item.Value, '$.Total') As Decimal(10,2))) AS TotalByOrderId
+                    SELECT SUM(item.Total) AS TotalByOrderId
                     FROM OrderWithOrderDetails
-                    CROSS APPLY OPENJSON(OrderDetailsJson) As item
+                    CROSS APPLY OPENJSON(OrderDetailsJson)
+                    WITH (Total Decimal(10,2) '$.Total') AS item
                     WHERE Id = '{id}'
                 ";
             var result = await _context.Set<TotalByOrderResult>()
@@ -108,9 +115,10 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<MaxPriceResult> GetMaxPriceByOrderIdAsync(Guid id)
         {
             var query = @$"
-                    SELECT MAX(CAST(JSON_VALUE(item.Value, '$.Price') AS Decimal(10,2))) AS MaximumPrice
+                    SELECT MAX(item.Price) AS MaximumPrice
                     FROM OrderWithOrderDetails
-                    CROSS APPLY OPENJSON(OrderDetailsJson) AS item
+                    CROSS APPLY OPENJSON(OrderDetailsJson)
+                    WITH (Price Decimal(10,2) '$.Price') AS item
                     WHERE Id = '{id}'
                 ";
             var result = await _context
@@ -123,9 +131,10 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<MinPriceResult> GetMinPriceByOrderIdAsync(Guid id)
         {
             var query = @$"
-                    SELECT MIN(CAST(JSON_VALUE(item.Value, '$.Price') AS Decimal(10,2))) AS MinimumPrice
+                    SELECT MIN(item.Price) AS MaximumPrice
                     FROM OrderWithOrderDetails
-                    CROSS APPLY OPENJSON(OrderDetailsJson) AS item
+                    CROSS APPLY OPENJSON(OrderDetailsJson)
+                    WITH (Price Decimal(10,2) '$.Price') AS item
                     WHERE Id = '{id}'
                 ";
             var result = await _context.Set<MinPriceResult>()
@@ -137,7 +146,7 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<IList<OrderWithOrderDetailEntity>> GetAllDataAsync()
         {
             var query = @"
-                    SELECT Id,CustomerName,OrderDate, JSON_QUERY(OrderDetailsJson) AS OrderDetailsJson 
+                    SELECT *
                     FROM OrderWithOrderDetails";
             var result = await _context.OrderWithOrderDetails
                 .FromSqlRaw(query)
@@ -148,7 +157,7 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomerAsync(IList<Guid> customerIds)
         {
             var query = @$"
-                    SELECT Id,CustomerName,OrderDate, JSON_QUERY(OrderDetailsJson) AS OrderDetailsJson 
+                    SELECT *
                     FROM OrderWithOrderDetails 
                     WHERE Id IN ({string.Join(',', customerIds.Select(id => $"'{id}'"))})";
            var result = await _context.OrderWithOrderDetails
@@ -160,7 +169,7 @@ namespace EFCoreJsonApp.Services.JsonService
         public async Task<OrderWithOrderDetailEntity> GetDataForSingleCustomerAsync(Guid id)
         {
             var query = @$"
-                    SELECT Id,CustomerName,OrderDate, OrderDetailsJson 
+                    SELECT *
                     FROM OrderWithOrderDetails where Id = '{id}'";
            var result = await _context.OrderWithOrderDetails.FromSqlRaw(query).FirstOrDefaultAsync();
             return result;

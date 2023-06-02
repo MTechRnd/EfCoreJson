@@ -1,16 +1,8 @@
-﻿using BenchmarkDotNet.Columns;
-using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Engines;
-using BenchmarkDotNet.Exporters.Csv;
-using BenchmarkDotNet.Exporters;
-using BenchmarkDotNet.Jobs;
-using BenchmarkDotNet.Loggers;
-using BenchmarkDotNet.Running;
-using BenchmarkDotNet.Validators;
+﻿using BenchmarkDotNet.Running;
+using EFCoreJsonApp.BenchmarkTest;
 using EFCoreJsonApp.Data;
 using EFCoreJsonApp.Models.Order;
 using EFCoreJsonApp.Models.OrderDetails;
-using EFCoreJsonApp.Models.Orders;
 using EFCoreJsonApp.Models.OrderWithOrderDetail;
 using EFCoreJsonApp.Models.OrderWithOrderDetailJson;
 using EFCoreJsonApp.Services;
@@ -19,12 +11,6 @@ using EFCoreJsonApp.Services.JsonUsingLinqService;
 using EFCoreJsonApp.Services.TraditionalService;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.CodeDom;
-using System.Diagnostics;
-using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Reports;
-using BenchmarkDotNet.Extensions;
-using EFCoreJsonApp.BenchmarkTest;
 
 namespace EFCoreJsonApp
 {
@@ -33,7 +19,7 @@ namespace EFCoreJsonApp
         private static async Task Main(string[] args)
         {
 
-            var summary = BenchmarkRunner.Run<MyBenchmark>(new BenchmarkConfig());
+            //var summary = BenchmarkRunner.Run<MyBenchmark>(new BenchmarkConfig());
 
             var hostBuilder = Host.CreateDefaultBuilder(args)
             .ConfigureServices((hostContext, services) =>
@@ -59,12 +45,12 @@ namespace EFCoreJsonApp
                 new Guid("01fa1215-41f5-ed11-9f05-f46b8c8f0ef6")
             };
             Console.WriteLine("Traditional query:");
-            //var res1 = await traditionalService.GetAllDataAsync();
+            var res1 = await traditionalService.GetAllDataAsync();
             //var res2 = await traditionalService.GetDataForSingleCustomerAsync(id);
             //var res3 = await traditionalService.GetDataForMultipleCustomerAsync(customerIds);
             //var res4 = await traditionalService.TotalOrdersOfCustomerAsync(id);
             //var res5 = await traditionalService.TotalOrdersOfCustomersAsync();
-            var res6 = await traditionalService.AverageOfPriceAsync();
+            //var res6 = await traditionalService.AverageOfPriceAsync();
             //var res7 = await traditionalService.AverageOfQuantityAsync();
             //var res8 = await traditionalService.SumOfAllPriceAsync();
             //var res9 = await traditionalService.SumOfAllQuantityAsync();
@@ -148,12 +134,12 @@ namespace EFCoreJsonApp
 
             Console.WriteLine("Json Linq query:");
             var jsonLinqService = serviceProvider.GetService<IJsonUsingLinqService>();
-            //var resJsonLinq1 = await jsonLinqService.GetAllDataAsync();
+            var resJsonLinq1 = await jsonLinqService.GetAllDataAsync();
             //var resJsonLinq2 = await jsonLinqService.GetDataForSingleCustomerAsync(idJson);
             //var resJsonLinq3 = await jsonLinqService.GetDataForMultipleCustomerAsync(customerIdsJson);
             //var resJsonLinq4 = await jsonLinqService.TotalOrdersOfCustomerAsync(idJson);
             //var resJsonLinq5 = await jsonLinqService.TotalOrdersOfCustomersAsync();
-            var resJsonLinq6 = await jsonLinqService.AverageOfPriceAsync();
+            //var resJsonLinq6 = await jsonLinqService.AverageOfPriceAsync();
             //var resJsonLinq7 = await jsonLinqService.AverageOfQuantityAsync();
             //var resJsonLinq8 = await jsonLinqService.SumOfAllPriceAsync();
             //var resJsonLinq9 = await jsonLinqService.SumOfAllQuantityAsync();
@@ -252,12 +238,12 @@ namespace EFCoreJsonApp
                 new Guid("977827d2-19fa-ed11-9f08-f46b8c8f0ef6"),
                 new Guid("708b27d2-19fa-ed11-9f08-f46b8c8f0ef6")
             };
-            //var resJson1 = await jsonService.GetAllDataAsync();
+            var resJson1 = await jsonService.GetAllDataAsync();
             //var resJson2 = await jsonService.GetDataForSingleCustomerAsync(idJson);
             //var resJson3 = await jsonService.GetDataForMultipleCustomerAsync(customerIdsJson);
             //var resJson4 = await jsonService.TotalOrdersOfCustomerAsync(idJson);
             //var resJson5 = await jsonService.TotalOrdersOfCustomersAsync();
-            var resJson6 = await jsonService.AverageOfPriceAsync();
+            //var resJson6 = await jsonService.AverageOfPriceAsync();
             //var resJson7 = await jsonService.AverageOfQuantityAsync();
             //var resJson8 = await jsonService.SumOfAllPriceAsync();
             //var resJson9 = await jsonService.SumOfAllQuantityAsync();
