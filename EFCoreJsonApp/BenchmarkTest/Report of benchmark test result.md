@@ -49,7 +49,7 @@ WHERE [o].[Id] = @__id_0
 
 Performance Improving of JsonLinq query is 1.12%
 
-## Get data for multiple customer
+## Get data for multiple customers
 
 ### Traditional Query
 SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[OrderDate], [o].[Timestamp], [o].[UpdatedAt], [o0].[Id], [o0].[CreatedAt], [o0].[ItemName], [o0].[OrderId], [o0].[Price], [o0].[Quantity], [o0].[Timestamp], [o0].[Total], [o0].[UpdatedAt] </br>
@@ -92,7 +92,7 @@ WHERE [o].[Id] = @__id_0
 
 Performance Improving of JsonLinq query is 8.98%
 
-## Total orders for all customer
+## Total orders for all customers
 
 ### Traditional Query
 SELECT [o].[Id], COUNT(*) AS [TotalOrder]
@@ -112,7 +112,7 @@ FROM [OrderWithOrderDetails] AS [o]
 
 Performance Improving of Traditional query is 169.56%
 
-## Average of all price 
+## Average of all price
 
 ### Traditional Query
 SELECT CAST(AVG([o0].[Price]) AS float(24)) </br>
@@ -208,7 +208,7 @@ INSERT INTO [OrderWithOrderDetails] ([OrderDetailsJson], [CreatedAt], [CustomerN
 
 Performance Improving of JsonLinq query is 55.34%
  
-## Updating Data
+## Update Data
 
 ### Traditional Query
 SELECT [t].[Id], [t].[CreatedAt], [t].[CustomerName], [t].[OrderDate], [t].[Timestamp], [t].[UpdatedAt], [o0].[Id], [o0].[CreatedAt], [o0].[ItemName], [o0].[OrderId], [o0].[Price], [o0].[Quantity], [o0].[Timestamp], [o0].[Total], [o0].[UpdatedAt] </br>
