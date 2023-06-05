@@ -86,11 +86,11 @@ namespace EFCoreJsonApp.BenchmarkTest
             };
 
             RandomIndex = new Random();
-            deleteOtherRecordsOfOrderEntity();
-            deleteOtherRecordsOfOrderWithOrderDetailsEntity();
+            DeleteOtherRecordsOfOrderEntity();
+            DeleteOtherRecordsOfOrderWithOrderDetailsEntity();
         }
 
-        public void deleteOtherRecordsOfOrderEntity()
+        public void DeleteOtherRecordsOfOrderEntity()
         {
             var totalRecords = _dataContext.Orders.Count();
             var removeRecors = totalRecords - 10000;
@@ -102,7 +102,7 @@ namespace EFCoreJsonApp.BenchmarkTest
                 _dataContext.SaveChanges();
             }
         }
-        public void deleteOtherRecordsOfOrderWithOrderDetailsEntity()
+        public void DeleteOtherRecordsOfOrderWithOrderDetailsEntity()
         {
             var totalRecords = _jsonDataContext.OrderWithOrderDetails.Count();
             var removeRecors = totalRecords - 10000;
