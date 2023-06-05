@@ -1,5 +1,7 @@
 ﻿# Report
 
+Here, you can see all query comparisons between the traditional approach and json linq approach. Here I have created two benchmark methods one is TraditionalBenchmark and the other one is JsonLinqBenchmark.
+I have tested all queries one by one and made this report. You can see the test results as follow. I have also added a performance-improving percentage so you can easily see which performed better for that case.
 
 # All Queries are as following:
 
