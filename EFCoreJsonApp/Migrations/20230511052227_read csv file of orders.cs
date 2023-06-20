@@ -24,16 +24,17 @@ namespace EFCoreJsonApp.Migrations
             IConfiguration config = new ConfigurationBuilder()
                .AddUserSecrets<Program>()
                .Build();
-            using var connection = new SqlConnection(config.GetConnectionString("DefaultConnection"));
+            using var connection = new SqlConnection(config.GetConnectionString("LocalSqlConnection"));
             connection.Open();
             using var transaction = connection.BeginTransaction();
             using var bulkCopy = new SqlBulkCopy(connection, SqlBulkCopyOptions.Default, transaction);
 
             bulkCopy.DestinationTableName = "Orders";
+            bulkCopy.ColumnMappings.Add("Id", "Id");
             bulkCopy.ColumnMappings.Add("CustomerName", "CustomerName");
             bulkCopy.ColumnMappings.Add("OrderDate", "OrderDate");
 
-            using var recordReader = ObjectReader.Create(records, "CustomerName", "OrderDate");
+            using var recordReader = ObjectReader.Create(records, "Id", "CustomerName", "OrderDate");
             bulkCopy.WriteToServer(recordReader);
 
             transaction.Commit();
