@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "EFCoreJsonApp": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

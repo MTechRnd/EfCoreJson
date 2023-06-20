@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  ms-sql-server:
+    image: mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+    environment:
+        ACCEPT_EULA: "Y"
+        SA_PASSWORD: ${DB_PASSWORD}
+        MSSQL_PID: Express
+    ports:
+      - "1434:1433"
+    volumes:
+      - ./data:/var/opt/mssql/data
+  efcorejsonapp:
+    image: ${DOCKER_REGISTRY-}efcorejsonapp
+    build:
+      context: .
+      dockerfile: EFCoreJsonApp/Dockerfile
+    environment:
+      DBServer: "ms-sql-server"
+    depends_on:
+        - ms-sql-server
