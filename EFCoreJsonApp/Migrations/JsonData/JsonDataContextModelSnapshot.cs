@@ -22,12 +22,31 @@ namespace EFCoreJsonApp.Migrations.JsonData
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("EFCoreJsonApp.Models.OrderDetails.OrderCount", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("TotalOrder")
+                        .HasColumnType("int");
+
+                    b.ToTable("OrderCount", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
             modelBuilder.Entity("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderWithOrderDetailEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWSEQUENTIALID()");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
@@ -37,14 +56,135 @@ namespace EFCoreJsonApp.Migrations.JsonData
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("date");
 
+                    b.Property<byte[]>("Timestamp")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
                     b.HasKey("Id");
 
-                    b.ToTable("OrderWithOrderDetails", (string)null);
+                    b.ToTable("OrderWithOrderDetails");
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.AverageOfPriceResult", b =>
+                {
+                    b.Property<decimal>("AverageOfPrice")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.ToTable("AverageOfPriceResult", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.AverageOfQuantityResult", b =>
+                {
+                    b.Property<decimal>("AverageOfQuantity")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.ToTable("AverageOfQuantityResult", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.MaxPriceResult", b =>
+                {
+                    b.Property<decimal>("MaximumPrice")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.ToTable("MaxPrice", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.MaxQuantityResult", b =>
+                {
+                    b.Property<int>("MaximumQuantity")
+                        .HasColumnType("int");
+
+                    b.ToTable("MaxQuantity", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.MinPriceResult", b =>
+                {
+                    b.Property<decimal>("MinimumPrice")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.ToTable("MinPrice", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.MinQuantityResult", b =>
+                {
+                    b.Property<int>("MinimumQuantity")
+                        .HasColumnType("int");
+
+                    b.ToTable("MinQuantity", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.TotalByOrderResult", b =>
+                {
+                    b.Property<decimal>("TotalByOrderId")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.ToTable("TotalByOrder", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.TotalOrderByCustomerResult", b =>
+                {
+                    b.Property<int>("TotalOrderByCustomerId")
+                        .HasColumnType("int");
+
+                    b.ToTable("TotalOrderByCustomerResult", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.TotalPriceResult", b =>
+                {
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.ToTable("TotalPriceResult", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EFCoreJsonApp.Models.Records.TotalQuantityResult", b =>
+                {
+                    b.Property<int>("TotalQuantity")
+                        .HasColumnType("int");
+
+                    b.ToTable("TotalQuantityResult", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
                 });
 
             modelBuilder.Entity("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderWithOrderDetailEntity", b =>
                 {
-                    b.OwnsMany("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderWithOrderDetailEntity.OrderDetailsJson#EFCoreJsonApp.Models.OrderWithOrderDetail.OrderDetailsJson", "OrderDetailsJson", b1 =>
+                    b.OwnsMany("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderDetailsJson", "OrderDetailsJson", b1 =>
                         {
                             b1.Property<Guid>("OrderWithOrderDetailEntityId")
                                 .HasColumnType("uniqueidentifier");
@@ -68,7 +208,7 @@ namespace EFCoreJsonApp.Migrations.JsonData
 
                             b1.HasKey("OrderWithOrderDetailEntityId", "Id");
 
-                            b1.ToTable("OrderWithOrderDetails", (string)null);
+                            b1.ToTable("OrderWithOrderDetails");
 
                             b1.ToJson("OrderDetailsJson");
 

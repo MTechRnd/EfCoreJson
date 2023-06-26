@@ -24,10 +24,15 @@ namespace EFCoreJsonApp.Migrations
 
             modelBuilder.Entity("EFCoreJsonApp.Models.Order.OrderEntity", b =>
                 {
-                    b.Property<Guid?>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWSEQUENTIALID()");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
@@ -37,6 +42,17 @@ namespace EFCoreJsonApp.Migrations
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("date");
 
+                    b.Property<byte[]>("Timestamp")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
                     b.HasKey("Id");
 
                     b.ToTable("Orders", (string)null);
@@ -44,10 +60,15 @@ namespace EFCoreJsonApp.Migrations
 
             modelBuilder.Entity("EFCoreJsonApp.Models.OrderDetails.OrderDetailEntity", b =>
                 {
-                    b.Property<Guid?>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWSEQUENTIALID()");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<string>("ItemName")
                         .IsRequired()
@@ -63,10 +84,21 @@ namespace EFCoreJsonApp.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<byte[]>("Timestamp")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
                     b.Property<float>("Total")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("float(24)")
                         .HasComputedColumnSql("[Quantity] * [Price]");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.HasKey("Id");
 

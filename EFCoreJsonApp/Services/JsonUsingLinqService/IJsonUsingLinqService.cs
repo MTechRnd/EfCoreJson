@@ -1,5 +1,7 @@
-﻿using EFCoreJsonApp.Models.OrderDetails;
+﻿using EFCoreJsonApp.Models.Order;
+using EFCoreJsonApp.Models.OrderDetails;
 using EFCoreJsonApp.Models.OrderWithOrderDetail;
+using EFCoreJsonApp.Models.OrderWithOrderDetailJson;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,5 +26,8 @@ namespace EFCoreJsonApp.Services.JsonUsingLinqService
         Task<float> GetTotalByOrderIdAsync(Guid id);
         Task<float> GetMaxPriceByOrderIdAsync(Guid id);
         Task<float> GetMinPriceByOrderIdAsync(Guid id);
+        Task InsertOrderDetailsAsync(OrderWithOrderDetailEntity orderWithOrderDetails);
+        Task<bool> UpdateOrderDetailsAsync(OrderWithOrderDetailJsonUpdateDto orderWithOrdderDetailsDto);
+        Task<bool> DeleteOrdersWithOrderIdAsync(Guid orderId);
     }
 }

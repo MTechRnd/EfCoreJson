@@ -35,6 +35,12 @@ namespace EFCoreJsonApp.Models.OrderDetails
                 .WithMany(o => o.OrderDetails)
                 .HasForeignKey(o => o.OrderId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Property(p => p.Timestamp).IsRowVersion();
+
+            modelBuilder.Property(p => p.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
+
+            modelBuilder.Property(p => p.UpdatedAt).HasDefaultValueSql("GETUTCDATE()");
         }
     }
 }
