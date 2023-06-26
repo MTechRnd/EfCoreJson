@@ -2,4 +2,4 @@ obj/
 bin/
 /.vs/
 /data
-secrets.env
+/secrets.env
