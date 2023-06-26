@@ -24,7 +24,7 @@ namespace EFCoreJsonApp.Migrations
             IConfiguration config = new ConfigurationBuilder()
                .AddUserSecrets<Program>()
                .Build();
-            using var connection = new SqlConnection(config.GetConnectionString("DefaultConnection"));
+            using var connection = new SqlConnection(config.GetConnectionString("LocalSqlConnection"));
             connection.Open();
             using var transaction = connection.BeginTransaction();
             using var bulkCopy = new SqlBulkCopy(connection, SqlBulkCopyOptions.Default, transaction);
