@@ -1,18 +1,18 @@
-﻿using EFCoreJsonApp.Models.Order;
-using EFCoreJsonApp.Models.OrderDetails;
+﻿using EFCoreJsonApp.Models.OrderDetails;
+using EFCoreJsonApp.Models.OrderWithOrderDetail;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EFCoreJsonApp.Services
+namespace EFCoreJsonApp.Services.JsonUsingLinqService
 {
-    public interface ITraditionalService
+    public interface IJsonUsingLinqService
     {
-        Task<IList<OrderEntity>> GetAllDataAsync();
-        Task<OrderEntity> GetDataForSingleCustomerAsync(Guid id);
-        Task<IList<OrderEntity>> GetDataForMultipleCustomerAsync(IList<Guid> id);
+        Task<IList<OrderWithOrderDetailEntity>> GetAllDataAsync();
+        Task<OrderWithOrderDetailEntity> GetDataForSingleCustomerAsync(Guid id);
+        Task<IList<OrderWithOrderDetailEntity>> GetDataForMultipleCustomerAsync(IList<Guid> ids);
         Task<float> AverageOfPriceAsync();
         Task<double> AverageOfQuantityAsync();
         Task<int> SumOfAllQuantityAsync();
@@ -24,6 +24,5 @@ namespace EFCoreJsonApp.Services
         Task<float> GetTotalByOrderIdAsync(Guid id);
         Task<float> GetMaxPriceByOrderIdAsync(Guid id);
         Task<float> GetMinPriceByOrderIdAsync(Guid id);
-
     }
 }

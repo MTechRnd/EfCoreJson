@@ -39,12 +39,12 @@ namespace EFCoreJsonApp.Migrations.JsonData
 
                     b.HasKey("Id");
 
-                    b.ToTable("OrderWithOrderDetails");
+                    b.ToTable("OrderWithOrderDetails", (string)null);
                 });
 
             modelBuilder.Entity("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderWithOrderDetailEntity", b =>
                 {
-                    b.OwnsMany("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderDetailsJson", "OrderDetailsJson", b1 =>
+                    b.OwnsMany("EFCoreJsonApp.Models.OrderWithOrderDetail.OrderWithOrderDetailEntity.OrderDetailsJson#EFCoreJsonApp.Models.OrderWithOrderDetail.OrderDetailsJson", "OrderDetailsJson", b1 =>
                         {
                             b1.Property<Guid>("OrderWithOrderDetailEntityId")
                                 .HasColumnType("uniqueidentifier");
@@ -68,7 +68,7 @@ namespace EFCoreJsonApp.Migrations.JsonData
 
                             b1.HasKey("OrderWithOrderDetailEntityId", "Id");
 
-                            b1.ToTable("OrderWithOrderDetails");
+                            b1.ToTable("OrderWithOrderDetails", (string)null);
 
                             b1.ToJson("OrderDetailsJson");
 
