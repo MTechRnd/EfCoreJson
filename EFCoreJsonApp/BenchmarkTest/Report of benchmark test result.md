@@ -88,10 +88,10 @@ WHERE Id = 'e27827d2-19fa-ed11-9f08-f46b8c8f0ef6' </br>
 ### Benchmark Test Result:
 |               Method |     Mean |    Error |  StdDev | Ratio | RatioSD |   Gen0 | Allocated | Alloc Ratio |
 |--------------------- |---------:|---------:|--------:|------:|--------:|-------:|----------:|------------:|
-| TraditionalBenchmark | 168.9 us | 19.93 us | 5.18 us |  1.00 |    0.00 | 1.4648 |  15.37 KB |        1.00 |
-|        JsonBenchmark | 169.5 us | 30.95 us | 8.04 us |  1.00 |    0.05 | 1.7090 |  17.06 KB |        1.11 |
+|        JsonBenchmark | 174.1 us |  8.36 us | 2.17 us |  0.97 |    0.03 | 1.7090 |  17.06 KB |        1.11 |
+| TraditionalBenchmark | 178.9 us | 22.02 us | 5.72 us |  1.00 |    0.00 | 1.4648 |  15.37 KB |        1.00 |
 
-Performance Improving of Traditional query is 0.35%
+Performance Improving of Json query is 2.72%
 
 ## Total orders for all customers
 
@@ -177,12 +177,12 @@ WITH (Total Decimal(10,2) '$.Total') AS item </br>
 WHERE Id = 'e27827d2-19fa-ed11-9f08-f46b8c8f0ef6'
 
 ### Benchmark Test Result:
-|               Method |     Mean |    Error |  StdDev | Ratio | RatioSD |   Gen0 |   Gen1 | Allocated | Alloc Ratio |
-|--------------------- |---------:|---------:|--------:|------:|--------:|-------:|-------:|----------:|------------:|
-| TraditionalBenchmark | 197.5 us | 26.26 us | 6.82 us |  1.00 |    0.00 | 1.7090 |      - |  16.18 KB |        1.00 |
-|        JsonBenchmark | 260.9 us | 20.35 us | 3.15 us |  1.32 |    0.05 | 1.9531 | 0.9766 |   18.6 KB |        1.15 |
+|               Method |     Mean |    Error |  StdDev | Ratio | RatioSD |   Gen0 | Allocated | Alloc Ratio |
+|--------------------- |---------:|---------:|--------:|------:|--------:|-------:|----------:|------------:|
+|        JsonBenchmark | 167.7 us | 20.10 us | 5.22 us |  0.86 |    0.04 | 1.7090 |  17.63 KB |        1.10 |
+| TraditionalBenchmark | 195.1 us | 21.86 us | 5.68 us |  1.00 |    0.00 | 1.7090 |  16.03 KB |        1.00 |
 
-Performance Improving of Traditional query is 27.66%
+Performance Improving of Json query is 15.10%
 
 ## Insert Data
 
