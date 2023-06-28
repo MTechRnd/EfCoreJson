@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreJsonApp", "EFCoreJsonApp\EFCoreJsonApp.csproj", "{16125747-DEA4-4673-8334-C8F74CC179F0}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FB5EBCF6-8DA4-4D45-8859-A84DF3C2A931}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{319248A8-630B-4D11-A8E8-F5175088EFD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{16125747-DEA4-4673-8334-C8F74CC179F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16125747-DEA4-4673-8334-C8F74CC179F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16125747-DEA4-4673-8334-C8F74CC179F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB5EBCF6-8DA4-4D45-8859-A84DF3C2A931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB5EBCF6-8DA4-4D45-8859-A84DF3C2A931}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB5EBCF6-8DA4-4D45-8859-A84DF3C2A931}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB5EBCF6-8DA4-4D45-8859-A84DF3C2A931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319248A8-630B-4D11-A8E8-F5175088EFD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319248A8-630B-4D11-A8E8-F5175088EFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319248A8-630B-4D11-A8E8-F5175088EFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319248A8-630B-4D11-A8E8-F5175088EFD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
