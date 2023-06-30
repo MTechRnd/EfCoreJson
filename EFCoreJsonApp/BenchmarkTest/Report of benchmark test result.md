@@ -3,6 +3,12 @@
 Here, you can see all query comparisons between the traditional approach and Json approach. Here I have created two benchmark methods one is TraditionalBenchmark and the other one is JsonLinqBenchmark.
 I have tested all queries one by one and made this report. You can see the test results as follow. I have also added a performance-improving percentage so you can easily see which performed better for that case.
 
+## Benchmark Test Result Summary
+
+The benchmark test was performed using BenchmarkDotNet version 0.13.5 on a Windows 11 operating system (version 10.0.22621.1555/22H2/2022Update/SunValley2). The hardware configuration consisted of a 12th Generation Intel Core i5-12400 processor with 1 CPU, 12 logical cores, and 6 physical cores.
+The test was conducted using .NET SDK version 7.0.102. The host environment for the benchmark test was .NET 7.0.2 (version 7.0.222.60605) with X64 RyuJIT AVX2 optimization. The job configuration for the test was also set to .NET 7.0.2 (version 7.0.222.60605) with X64 RyuJIT AVX2 optimization.
+The benchmark test consisted of 5 iterations and 5 warm-up runs.
+
 # All Queries are as following:
 
 ## Get all data

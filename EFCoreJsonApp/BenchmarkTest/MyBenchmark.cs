@@ -85,7 +85,7 @@ namespace EFCoreJsonApp.BenchmarkTest
             DeleteOtherRecordsOfOrderEntity();
             DeleteOtherRecordsOfOrderWithOrderDetailsEntity();
         }
-
+        // Delete records in orders entity which is above 10,000 before running a benchmark test. It will delete referenced records.
         public void DeleteOtherRecordsOfOrderEntity()
         {
             var totalRecords = _dataContext.Orders.Count();
@@ -98,6 +98,7 @@ namespace EFCoreJsonApp.BenchmarkTest
                 _dataContext.SaveChanges();
             }
         }
+        // Delete records in orderWithOrderDetail above 10,000 before running a benchmark test. It will delete referenced records.
         public void DeleteOtherRecordsOfOrderWithOrderDetailsEntity()
         {
             var totalRecords = _jsonDataContext.OrderWithOrderDetails.Count();
@@ -114,7 +115,7 @@ namespace EFCoreJsonApp.BenchmarkTest
         [Benchmark(Baseline = true)]
         public async Task TraditionalBenchmark()
         {
-            //var res1 = await _traditionalService.GetAllDataAsync();
+            var res1 = await _traditionalService.GetAllDataAsync();
             //var res2 = await _traditionalService.GetDataForSingleCustomerAsync(_guidTraditional);
             //var res3 = await _traditionalService.GetDataForMultipleCustomerAsync(_guidsOfTraditional);
             //var res4 = await _traditionalService.TotalOrdersOfCustomerAsync(_guidTraditional);
@@ -125,7 +126,7 @@ namespace EFCoreJsonApp.BenchmarkTest
             //var res9 = await _traditionalService.SumOfAllQuantityAsync();
             //var res10 = await _traditionalService.GetMaxQuantityByOrderIdAsync(_guidTraditional);
             //var res11 = await _traditionalService.GetMinQuantityByOrderIdAsync(_guidTraditional);
-            var res12 = await _traditionalService.GetTotalByOrderIdAsync(_guidTraditional);
+            //var res12 = await _traditionalService.GetTotalByOrderIdAsync(_guidTraditional);
             //var res13 = await _traditionalService.GetMaxPriceByOrderIdAsync(_guidTraditional);
             //var res14 = await _traditionalService.GetMinPriceByOrderIdAsync(_guidTraditional);
 
@@ -172,20 +173,20 @@ namespace EFCoreJsonApp.BenchmarkTest
         [Benchmark]
         public async Task JsonBenchmark()
         {
-            //var resJson1 = await _jsonUsingLinqService.GetAllDataAsync();
+            var resJson1 = await _jsonUsingLinqService.GetAllDataAsync();
             //var resJson2 = await _jsonUsingLinqService.GetDataForSingleCustomerAsync(_guidJson);
             //var resJson3 = await _jsonUsingLinqService.GetDataForMultipleCustomerAsync(_guidsOfJson);
-            //var resJson4 = _jsonUsingLinqService.TotalOrdersOfCustomerAsync(_guidJson);
-            //var resJson5 = _jsonUsingLinqService.TotalOrdersOfCustomersAsync();
-            //var resJson6 = _jsonUsingLinqService.AverageOfPriceAsync();
-            //var resJson7 = _jsonUsingLinqService.AverageOfQuantityAsync();
-            //var resJson8 = _jsonUsingLinqService.SumOfAllPriceAsync();
-            //var resJson9 = _jsonUsingLinqService.SumOfAllQuantityAsync();
+            //var resJson4 = await _jsonUsingLinqService.TotalOrdersOfCustomerAsync(_guidJson);
+            //var resJson5 = await _jsonUsingLinqService.TotalOrdersOfCustomersAsync();
+            //var resJson6 = await _jsonUsingLinqService.AverageOfPriceAsync();
+            //var resJson7 = await _jsonUsingLinqService.AverageOfQuantityAsync();
+            //var resJson8 = await _jsonUsingLinqService.SumOfAllPriceAsync();
+            //var resJson9 = await _jsonUsingLinqService.SumOfAllQuantityAsync();
             //var resJson10 = await _jsonUsingLinqService.GetMaxQuantityByOrderIdAsync(_guidJson);
-            //var resJson11 = _jsonUsingLinqService.GetMinQuantityByOrderIdAsync(_guidJson);
-            //var resJson12 = _jsonUsingLinqService.GetTotalByOrderIdAsync(_guidJson);
-            var resJson13 = _jsonUsingLinqService.GetMaxPriceByOrderIdAsync(_guidJson);
-            //var resJson14 = _jsonUsingLinqService.GetMinPriceByOrderIdAsync(_guidJson);
+            //var resJson11 = await _jsonUsingLinqService.GetMinQuantityByOrderIdAsync(_guidJson);
+            //var resJson12 = await _jsonUsingLinqService.GetTotalByOrderIdAsync(_guidJson);
+            //var resJson13 = await _jsonUsingLinqService.GetMaxPriceByOrderIdAsync(_guidJson);
+            //var resJson14 = await _jsonUsingLinqService.GetMinPriceByOrderIdAsync(_guidJson);
 
 
             //var orderWithOrderDetails = new OrderWithOrderDetailEntity()
